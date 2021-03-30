@@ -9,7 +9,7 @@ export default class PanelMessage extends React.Component {
     }
 
     render() {
-        return (<div className="panel-message">
+        return (<div className="panel-message hidden-md-down">
             <h1>Roma</h1>
             <h3>Come non l'hai mai vista</h3>
             <div className="buttons-container">

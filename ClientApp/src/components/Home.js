@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Panel from './Panel';
 import LateralCard from './LateralCard';
+import BrandHeader from './BrandHeader';
 
 import "./css/Home.css";
 
@@ -9,9 +10,14 @@ export class Home extends Component {
 
   render () {
     return (
-      <div className="main-container align-center">
-            <Panel />
-            <LateralCard />
+        <div className="container-fluid main-container align-center">
+            <div className="d-block d-lg-none">
+                <BrandHeader dark={true} />
+            </div>
+            <div className="row">
+                <Panel />
+                <LateralCard />
+            </div>      
       </div>
     );
   }
