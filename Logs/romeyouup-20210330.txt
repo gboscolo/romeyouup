@@ -28,3 +28,31 @@
 2021-03-30T21:11:19.2246022+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
 2021-03-30T21:11:24.1707432+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
  (02daff8f)
+2021-03-30T22:23:30.5690011+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T22:23:30.5755411+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T22:23:30.5756405+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T22:23:35.3775682+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-30T22:59:44.3461481+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T22:59:44.3514516+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T22:59:44.3515192+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T22:59:49.4788329+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-30T22:59:57.2486032+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T22:59:57.2555016+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T22:59:57.2555966+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T23:00:01.3328479+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T23:00:01.3395747+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T23:00:01.3396835+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T23:00:06.4480677+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-30T23:00:36.7263139+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T23:00:36.7317608+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T23:00:36.7318519+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T23:00:41.4505107+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-30T23:05:26.0908228+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-30T23:05:26.0968120+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-30T23:05:26.0969355+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-30T23:05:31.1568032+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)

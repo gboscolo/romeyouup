@@ -3,6 +3,12 @@
 	src: local('Rajdhani'), url(../../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf) format('truetype');
 }
 
+@media (min-width: 1200px) {
+	.container, .container-sm, .container-md, .container-lg, .container-xl {
+		max-width: 680px;
+	}
+}
+
 body {
 	overflow-x: hidden;
 }

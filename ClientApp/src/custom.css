@@ -51,9 +51,3 @@ code {
 	width: 100vw;
 	height: 100vh;
 }
-
-@media (min-width: 1200px) {
-	.container, .container-sm, .container-md, .container-lg, .container-xl {
-		max-width: 680px;
-	}
-}

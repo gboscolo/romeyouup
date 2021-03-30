@@ -3,6 +3,7 @@ import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Post } from './components/Post';
+import { Tour } from './components/Tour';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Administration } from './components/Administration';
@@ -21,6 +22,7 @@ export default class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/administration' component={Administration} />
             <Route path='/post/:id' component={Post} />
+            <Route path='/tour/:id' component={Tour} />
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
             <Route path='/ourproposals' component={OurProposals} />

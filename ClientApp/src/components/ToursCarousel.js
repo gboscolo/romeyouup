@@ -21,7 +21,7 @@ export default class ToursCarousel extends React.Component {
     render() {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
-            : CardsCarousel.renderToursCarousel(this.state.tours, this.state.filter);
+            : ToursCarousel.renderToursCarousel(this.state.tours, this.state.filter);
         return (
             <div style={{ display: "grid", maxWidth: "100%" }}>
                 {contents}
@@ -54,16 +54,26 @@ export default class ToursCarousel extends React.Component {
 
         return (
             <Carousel responsive={responsive} partialVisible={true}>
-                {tours.map(post =>
-                    <Link to={"/post/" + post.id} key={post.id}>
-                        <div className="tour-item" key={post.id} title={post.title + " " + post.content} style={{ backgroundImage: "url('/images/" + post.images[0] + "')" }}>
+                {tours.map(tour =>
+                    <Link to={"/tour/" + tour.id} key={tour.id}>
+                        <div className="tour-item" key={tour.id} title={tour.title + " " + tour.content} style={{ backgroundImage: "url('/images/" + tour.images[0] + "')" }}>
+                        {ToursCarousel.GetModalityBadge(tour.modality)}
                         <div className="overlay"></div>
-                        <h5 className="tour-title ellipsis">{post.title}</h5>
+                        <h5 className="tour-title ellipsis">{tour.title}</h5>
                         </div>
                     </Link>
                 )}
             </Carousel>
            );
+    }
+
+    static GetModalityBadge(modality) {
+        switch (modality) {
+            case 1:
+                return (<span className="modality modality-walk"></span>);
+            case 2:
+                return (<span className="modality modality-bike"></span>);
+        }
     }
 
     async getToursData() {

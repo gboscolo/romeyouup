@@ -1,8 +1,10 @@
-﻿react-multi-carousel-item {
+﻿.react-multi-carousel-item {
 	transition: all linear 0.2s;
+	padding-bottom: 50px;
 }
 
-.post-item {
+.tour-item {
+	min-width: 280px;
 	padding: 10px;
 	background-color: grey;
 	margin-right: 10px;
@@ -15,25 +17,46 @@
 	background-repeat: no-repeat;
 }
 
-.post-item > .post-title {
+.tour-item > .tour-title {
 	position: absolute;
 	left: 10px;
 	right: 10px;
-	bottom: 40px;
+	bottom: 10px;
 }
 
-.post-item > .post-author {
+.tour-item > .tour-author {
 	position: absolute;
 	bottom:0;
 }
 
-	.post-item > .overlay {
-		width: 100%;
-		background-image: linear-gradient(to top,#333, rgba(255,0,0,0));
-		height: 180px;
+.tour-item > .overlay {
+	width: 100%;
+	background-image: linear-gradient(to top,#333, rgba(255,0,0,0));
+	height: 180px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 0 0 10px 10px;
+}
+
+	.tour-item .modality {
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		width: 40px;
+		height: 40px;
+		background-color: #333333;
+		top: 20px;
 		right: 0;
-		border-radius: 0 0 10px 10px;
+		border-radius: 10px 0 0 10px;
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: 3px 3px;
+		padding: 10px;
 	}
+
+.tour-item .modality.modality-walk {
+	background-image: url(../../assets/icons/walking.svg);
+}
+
+.tour-item .modality.modality-bike {
+}

@@ -1,0 +1,82 @@
+﻿@font-face {
+	font-family: 'PlayfairDisplay';
+	src: local('Rajdhani'), url(../../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: local('Rajdhani'), url(../../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf) format('truetype');
+}
+@media (min-width: 1200px) {
+	.container, .container-sm, .container-md, .container-lg, .container-xl {
+		max-width: 980px;
+	}
+}
+body {
+	overflow-x: hidden;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 46px;
+}
+
+.subtitle {
+	color: #666666;
+	font-style: italic;
+	font-family: "PlayfairDisplay";
+}
+
+.highlight-title {
+	font-family: Leelawadee;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.highlight-section {
+	padding: 20px;
+	color: white;
+	border-radius: 10px;
+	background-color: #333333;
+	margin-bottom: 20px;
+}
+
+.highlights {
+	font-style: italic;
+	font-family: "PlayfairDisplay";
+}
+
+.additional-info {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #F2A643;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.description {
+	font-family: "PlayfairDisplay";
+	font-size: 17px;
+	letter-spacing: 0.5px;
+}
+
+.content {
+	font-family: PlayfairDisplay;
+	font-size: 21px;
+	padding-bottom: 30px;
+	line-height: 32px;
+}
+
+.tour-picture {
+	width: 100%;
+}
+
+.see-more {
+	color: #707070 !important;
+	border-color: #707070 !important;
+	font-family: Leelawadee;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}

@@ -27,6 +27,7 @@ namespace romeyouup
 
             services.AddControllersWithViews();
             services.Add(new ServiceDescriptor(typeof(DataContext), new DataContext(Configuration.GetConnectionString("DefaultConnection"))));
+            services.Add(new ServiceDescriptor(typeof(TourContext), new TourContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.AddMvc();
 
             //services.AddLogging(logging =>

@@ -3,9 +3,16 @@
 	src: local('Leelawadee'), url(../../assets/fonts/Leelawadee/leelawadee.ttf) format('truetype');
 }
 
+.hamburger-menu-icon {
+	background-image: url(../../assets/images/hamburger.svg);
+	background-size: 20px 20px;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+}
 
 .brand-header {
-	padding:20px;
+	padding: 20px;
 	height: 90px;
 }
 
