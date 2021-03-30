@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\assets\fonts\Metropolis\" />
     <Folder Include="Logs\" />
   </ItemGroup>
 

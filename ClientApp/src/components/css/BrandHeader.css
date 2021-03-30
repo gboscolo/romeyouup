@@ -1,4 +1,10 @@
-﻿.brand-header {
+﻿@font-face {
+	font-family: 'Leelawadee';
+	src: local('Leelawadee'), url(../../assets/fonts/Leelawadee/leelawadee.ttf) format('truetype');
+}
+
+
+.brand-header {
 	padding:20px;
 	height: 90px;
 }

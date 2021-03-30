@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Leelawadee';
+	src: local('Leelawadee'), url(./assets/fonts/Leelawadee/leelawadee.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Metropolis';
+	src: local('Metropolis'), url(./assets/fonts/Metropolis/Metropolis-Regular.otf) format('opentype');
+}
+
+
 /* Provide sufficient contrast against white background */
 body {
 	font-family: Metropolis;

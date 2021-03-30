@@ -1,5 +1,4 @@
 ﻿import * as React from 'react';
-import hamburger from '../assets/images/hamburger.svg';
 import "./css/LateralCard.css";
 import FiltersTab from './FiltersTab';
 import CardsCarousel from './CardsCarousel';
@@ -19,7 +18,7 @@ export default class LateralCard extends React.Component {
         return (
             <div className="lateral-card col-lg-4 col-sm-12">
                 <div className="col-lg-8 d-none d-lg-block d-xl-block">
-                    <img className="hamburger-logo" alt="logo" src={hamburger}></img>
+                    
                     <h2>Scopri</h2>
                 </div>
                 <FiltersTab items={categories} selectedItem={0} onChange={onFilterChange} />
