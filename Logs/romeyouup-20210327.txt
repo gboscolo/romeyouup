@@ -1,0 +1,53 @@
+2021-03-27T22:05:54.5315751+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-27T22:05:54.5384878+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-27T22:05:54.5386019+01:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-27T22:06:00.7725224+01:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-27T22:40:33.7741123+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-27T22:40:33.7894447+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-27T22:40:33.7909926+01:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-27T22:40:39.4682463+01:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-27T22:44:08.6508312+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-27T22:44:08.6659212+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-27T22:44:08.6677168+01:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-27T22:44:14.1402387+01:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-27T22:44:20.8533895+01:00 80000040-0004-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+romeyouup.Controllers.PostsController.Get (romeyouup)
+romeyouup.Controllers.PostsController.GetPost (romeyouup)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-27T22:44:50.3447640+01:00 8000003a-0006-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+romeyouup.Controllers.PostsController.Get (romeyouup)
+romeyouup.Controllers.PostsController.GetPost (romeyouup)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-27T22:45:47.6739443+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-27T22:45:47.6906754+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-27T22:45:47.6924276+01:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-27T22:45:53.1083938+01:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-27T22:47:27.4663724+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-27T22:47:27.4794140+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-27T22:47:27.4797349+01:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-27T22:47:37.4487094+01:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)

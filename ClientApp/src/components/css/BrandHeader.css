@@ -1,0 +1,29 @@
+﻿.brand-header {
+	padding:20px;
+	height: 90px;
+}
+
+.link-container {
+	font-family: Leelawadee;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	float: right;
+	margin-top: 10px;
+}
+
+.link-container .link {
+	color: white !important;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+.link-container .link.middle {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.link-container.dark .link {
+	color: #707070 !important;
+	border-color: #707070 !important;
+}

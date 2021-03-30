@@ -1,0 +1,25 @@
+﻿.filter-item {
+	display: inline-block;
+	padding: 20px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	color: grey;
+	letter-spacing: 1px;
+}
+
+.filter-item.selected {
+	color: darkorange;
+	position: relative;
+}
+.filter-item.selected::before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: darkorange;
+	position: absolute;
+	top: 45px;
+	left: 45%;
+}

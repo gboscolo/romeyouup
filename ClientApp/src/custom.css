@@ -1,0 +1,45 @@
+/* Provide sufficient contrast against white background */
+body {
+	font-family: Metropolis;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.align-center {
+	justify-content: center;
+}
+
+.page-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+@media (min-width: 1200px) {
+	.container, .container-sm, .container-md, .container-lg, .container-xl {
+		max-width: 680px;
+	}
+}

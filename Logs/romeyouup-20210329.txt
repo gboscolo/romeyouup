@@ -1,0 +1,256 @@
+2021-03-29T15:29:03.0354632+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T15:29:03.0421383+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T15:29:03.0422452+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T15:29:10.0033931+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T15:31:49.5217017+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T15:31:49.5324351+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T15:31:49.5409567+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T15:31:54.8408540+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T15:35:15.7150070+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T15:35:15.7301534+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T15:35:15.7317404+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T15:35:21.1391533+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T15:51:55.7076748+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T15:51:55.7296934+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T15:51:55.7314925+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T15:52:01.4899277+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T15:59:25.4317358+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T15:59:25.4466997+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T15:59:25.4481935+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T15:59:30.8949411+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:04:18.3307619+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:04:18.3454938+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:04:18.3478860+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:04:24.1104544+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:04:31.1118787+02:00 8000003f-0005-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+romeyouup.Controllers.PostsController.Get (romeyouup)
+romeyouup.Controllers.PostsController.GetPost (romeyouup)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-29T16:04:54.1593753+02:00 80000046-0006-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+romeyouup.Controllers.PostsController.Get (romeyouup)
+romeyouup.Controllers.PostsController.GetPost (romeyouup)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-29T16:05:41.5724129+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:05:41.5874196+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:05:41.5888106+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:05:47.4516081+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:09:26.3038171+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:09:26.3214105+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:09:26.3229870+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:09:32.4562799+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:11:05.3491703+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:11:05.3635819+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:11:05.3655563+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:11:13.2296465+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:12:13.3342615+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:12:13.3561775+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:12:13.3583713+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:12:22.1527928+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:13:07.0067957+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:13:07.0377768+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:13:07.0402414+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:13:16.3428668+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:14:13.4340067+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:14:13.4655263+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:14:13.4681333+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:14:24.3419950+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:33:24.5218374+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:33:24.5390515+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:33:24.5410174+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:33:29.8099620+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:47:36.7579978+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:47:36.7550063+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:47:37.7093569+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:47:37.7108219+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:49:23.8042774+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:49:23.8106806+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:49:23.8107807+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:49:28.9467102+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:50:12.7421542+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:50:12.7502324+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:50:12.7503826+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:50:17.9588926+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:51:10.9083077+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:51:10.9165055+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:51:10.9166385+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:51:16.1046029+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:52:29.0702480+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:52:29.0871870+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:52:29.0887606+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:52:34.6914060+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:55:53.8395228+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:55:53.8478972+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:55:53.8480490+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:55:59.1829026+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T16:56:48.5986841+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T16:56:48.6081308+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T16:56:48.6082675+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T16:56:53.9431076+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T17:07:17.5029084+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T17:07:17.5213411+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T17:07:17.5229165+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T17:07:23.8262528+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T17:07:56.8470058+02:00 8000002b-0000-e800-b63f-84710c7967bb [ERR] Error in Posts/Get (07a38cf9)
+2021-03-29T17:09:00.2488956+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T17:09:00.2708368+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T17:09:00.2734020+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T17:09:05.7717257+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T17:24:05.6013605+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T17:24:05.6072895+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T17:24:05.6073867+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T17:24:10.6990063+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T21:17:47.8064453+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T21:17:47.8139855+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T21:17:47.8140989+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T21:17:53.1381642+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T21:19:25.3574518+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T21:19:25.3636586+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T21:19:25.3637614+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T21:19:30.8820535+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T22:55:26.9911358+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T22:55:26.9977137+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T22:55:26.9979182+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T22:55:32.0392301+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T22:56:48.1018157+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T22:56:48.1103931+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T22:56:48.1126234+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T22:56:53.4075794+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T22:57:02.6331423+02:00 80000028-0007-fc00-b63f-84710c7967bb [ERR] Error in Posts/Get (07a38cf9)
+2021-03-29T22:57:30.3360624+02:00 80000079-0004-fc00-b63f-84710c7967bb [ERR] Error in Posts/Get (07a38cf9)
+2021-03-29T22:58:25.1777264+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T22:58:25.2135663+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T22:58:25.2158922+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T22:58:30.4822817+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T22:59:47.5521417+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T22:59:47.5687355+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T22:59:47.5705703+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T22:59:53.1636958+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:02:50.0684414+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:02:50.0838446+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:02:50.0856726+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:02:55.4913495+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:03:45.7327437+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:03:45.7559113+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:03:45.7575544+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:03:51.3927360+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:04:34.5408865+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:04:34.5597900+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:04:34.5613349+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:04:40.0782627+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:08:05.9482019+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:08:05.9676033+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:08:05.9690492+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:08:11.3644081+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:09:36.1936653+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:09:36.2157170+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:09:36.2173830+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:09:42.1607401+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:12:36.9650246+02:00 80000052-0003-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+2021-03-29T23:12:36.9701746+02:00 80000052-0003-fd00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-03-29T23:12:37.0858775+02:00 80000052-0003-fd00-b63f-84710c7967bb [ERR] Connection ID ""18230571306091282513"", Request ID ""80000052-0003-fd00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-03-29T23:16:01.2142495+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:16:01.2315797+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:16:01.2335866+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:16:06.5491948+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:18:40.0510033+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:18:40.0692037+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:18:40.0714865+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:18:45.5303649+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-03-29T23:21:08.7882529+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-29T23:21:08.8052932+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-29T23:21:08.8067486+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-03-29T23:21:14.3562970+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)

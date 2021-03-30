@@ -1,0 +1,39 @@
+﻿react-multi-carousel-item {
+	transition: all linear 0.2s;
+}
+
+.post-item {
+	padding: 10px;
+	background-color: grey;
+	margin-right: 10px;
+	border-radius: 10px;
+	height: 280px;
+	color: white;
+	position: relative;
+	cursor: pointer;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+.post-item > .post-title {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 40px;
+}
+
+.post-item > .post-author {
+	position: absolute;
+	bottom:0;
+}
+
+	.post-item > .overlay {
+		width: 100%;
+		background-image: linear-gradient(to top,#333, rgba(255,0,0,0));
+		height: 180px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 0 0 10px 10px;
+	}

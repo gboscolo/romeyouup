@@ -1,0 +1,15 @@
+﻿.lateral-card {
+	flex: 2;
+	padding: 20px;
+	padding-right:0;
+}
+
+.lateral-card h2 {
+	color: #707070;
+}
+
+.hamburger-logo {
+	height: 22px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}

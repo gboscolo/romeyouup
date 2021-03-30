@@ -1,0 +1,33 @@
+﻿.panel-message {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	color:white;
+	text-align: center;
+}
+
+.panel-message h1 {
+	font-size: 60px;
+	letter-spacing: 5px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+	.panel-message .buttons-container {
+		padding:30px;
+		margin-bottom:50px;
+	}
+
+		.panel-message .buttons-container button {
+			background-color: #F2A643;
+			text-transform: uppercase;
+			font-family: Leelawadee;
+			font-size: 16px;
+			letter-spacing: 2px;
+			border: none;
+			width: 300px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin:10px;
+		}
