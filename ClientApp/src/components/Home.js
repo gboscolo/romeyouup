@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Panel from './Panel';
 import LateralCard from './LateralCard';
 import BrandHeader from './BrandHeader';
+import i18next from 'i18next';
 
 import "./css/Home.css";
 

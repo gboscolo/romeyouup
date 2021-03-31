@@ -17,18 +17,20 @@
 }
 
 .link-container {
-	font-family: Leelawadee;
-	font-size: 16px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	float: right;
 	margin-top: 10px;
 }
 
 .link-container .link {
+	font-family: Leelawadee;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	color: white !important;
 	text-decoration: none;
 	padding: 0 20px 0 20px;
+	background:none;
+	border: none;
 }
 
 .link-container .link.middle {

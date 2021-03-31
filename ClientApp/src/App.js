@@ -5,7 +5,6 @@ import { Home } from './components/Home';
 import { Post } from './components/Post';
 import { Tour } from './components/Tour';
 import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
 import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
 import { Contacts } from './components/Contacts';

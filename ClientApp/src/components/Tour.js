@@ -1,7 +1,9 @@
 ﻿import * as React from 'react';
 import BrandHeader from './BrandHeader';
 import Footer from './Footer';
-import ToursCarousel from './ToursCarousel';
+import { ToursCarousel } from './ToursCarousel';
+import i18next from 'i18next';
+import { withTranslation } from 'react-i18next';
 import './css/Tour.css';
 
 
@@ -14,7 +16,7 @@ export class Tour extends React.Component {
     render() {
         if (this.state.tour == null) {
             this.loadTour();
-            return (<div>Loading...</div>);
+            return (<div>{i18next.t("Loading")}...</div>);
         }       
 
         let imageCarousel = Tour.getImagesCarousel(this.state.tour);
@@ -28,28 +30,28 @@ export class Tour extends React.Component {
                         <h1 className="title">{this.state.tour.title}</h1>
                         <h4 className="subtitle">"{this.state.tour.caption}"</h4>
                         {imageCarousel}
-                        <div className="highlight-section">
-                            <div><span className="highlight-title">Durata:</span>{this.state.tour.duration} ore</div>
-                            <div><span className="highlight-title">Modalità:</span> {Tour.GetModalityString(this.state.tour.modality)}</div>
-                            <div><span className="highlight-title">Costo:</span> {this.state.tour.cost}€ a persona</div>
+                            <div className="highlight-section">
+                                <div><span className="highlight-title">{i18next.t("Duration")}:</span>{this.state.tour.duration} {i18next.t("Hours")}</div>
+                                <div><span className="highlight-title">{i18next.t("Modality")}:</span> {Tour.GetModalityString(this.state.tour.modality)}</div>
+                                <div><span className="highlight-title">{i18next.t("Cost")}:</span> {this.state.tour.cost}€ {i18next.t("ForPerson")}</div>
                             </div>
-                            <div><div className="highlight-title">Cosa vedremo:</div> <div className="description">{this.state.tour.willSee}</div></div>
+                            <div><div className="highlight-title">{i18next.t("WhatWeWillSee")}:</div> <div className="description">{this.state.tour.willSee}</div></div>
                     </div>
                     <div className="col-xl-6 col-md-12">
-                            <div className="highlight-title">In breve</div>
+                            <div className="highlight-title">{i18next.t("Shortly")}</div>
                             <div className="highlights"
                                 dangerouslySetInnerHTML={{
                                     __html: this.state.tour.summary
                                 }}></div>
-                            <div className="highlight-title">Descrizione</div>
+                            <div className="highlight-title">{i18next.t("Description")}</div>
                             <div className="description">{this.state.tour.description}</div>
                             <div className="additional-info">
-                                <span className="highlight-title">Informazioni aggiuntive: </span>
+                                <span className="highlight-title">{i18next.t("AdditionalInfo")}: </span>
                                 <span>{this.state.tour.additionalInfo}</span>
                             </div>
                         </div>
                         <div className="col">
-                            <p className="see-more">Vedi anche...</p>
+                            <p className="see-more">{i18next.t("AlsoLook")}...</p>
                             <ToursCarousel filter={0} />
                         </div>
                     </div>
@@ -61,10 +63,10 @@ export class Tour extends React.Component {
     static GetModalityString(modality) {
         switch (modality) {
             case 1:
-                return "Tour a piedi";
+                return i18next.t("WalkTour");
                 break;
             case 2:
-                return "Tour in bici";
+                return i18next.t("BikeTour");
                 break;
         }
     }
@@ -89,3 +91,5 @@ export class Tour extends React.Component {
         this.setState({ tour: data });
     }
 }
+
+export default withTranslation()(Tour)

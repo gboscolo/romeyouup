@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import i18next from 'i18next';
 import './css/PanelImage.css';
 
 export default class PanelImage extends React.Component {

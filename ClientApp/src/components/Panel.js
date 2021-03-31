@@ -1,6 +1,7 @@
 ﻿import React, { Component } from 'react';
 import BrandHeader from './BrandHeader';
 import PanelMessage from './PanelMessage';
+import i18next from 'i18next';
 import './css/Panel.css';
 
 export default class Panel extends Component {

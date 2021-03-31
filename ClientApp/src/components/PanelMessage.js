@@ -1,8 +1,11 @@
 ﻿import * as React from 'react';
 import './css/PanelMessage.css';
+import i18next from 'i18next';
+import { withTranslation } from 'react-i18next';
+
 import { Link } from "react-router-dom";
 
-export default class PanelMessage extends React.Component {
+export class PanelMessage extends React.Component {
     constructor(props) {
         super(props);
         this.state = { };
@@ -10,16 +13,18 @@ export default class PanelMessage extends React.Component {
 
     render() {
         return (<div className="panel-message hidden-md-down">
-            <h1>Roma</h1>
-            <h3>Come non l'hai mai vista</h3>
+            <h1>{i18next.t("Rome")}</h1>
+            <h3>{i18next.t("AsYouNeverSeen")}</h3>
             <div className="buttons-container">
                 <Link to="/whoweare">
-                    <button>Chi siamo</button>
+                    <button>{i18next.t("WhoWeAre")}</button>
                 </Link>
                 <Link to="/ourproposals">
-                    <button>Le nostre proposte</button>
+                    <button>{i18next.t("OurProposals")}</button>
                 </Link>
                 </div>
         </div>);
     }
 }
+
+export default withTranslation()(PanelMessage)

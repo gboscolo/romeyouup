@@ -1,5 +1,6 @@
 ﻿import * as React from 'react';
 import BrandHeader from './BrandHeader';
+import i18next from 'i18next';
 
 
 export class Contacts extends React.Component {

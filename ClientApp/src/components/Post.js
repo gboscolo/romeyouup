@@ -2,6 +2,8 @@
 import BrandHeader from './BrandHeader';
 import Footer from './Footer';
 import CardsCarousel from './CardsCarousel';
+import i18next from 'i18next';
+import { withTranslation } from 'react-i18next';
 import './css/Post.css';
 
 
@@ -14,7 +16,7 @@ export class Post extends React.Component {
     render() {
         if (this.state.post == null) {
             this.loadPost();
-            return (<div>Loading...</div>);
+            return (<div>{i18next.t("Loading")}...</div>);
         }       
 
         let imageCarousel = Post.getImagesCarousel(this.state.post);
@@ -24,12 +26,12 @@ export class Post extends React.Component {
                 <BrandHeader dark={true} />
                 <div className="container">
                     <h1 className="title">{this.state.post.title}</h1>
-                    <h5 className="subtitle">Da: {this.state.post.author}</h5>
+                    <h5 className="subtitle">{i18next.t("From")}: {this.state.post.author}</h5>
                     
                     {imageCarousel}
 
                     <p className="content">{this.state.post.content}</p>
-                    <p className="see-more">Leggi anche...</p>
+                    <p className="see-more">{i18next.t("AlsoRead")}...</p>
                     <CardsCarousel filter={0} />                    
                 </div>
                 <Footer/>
@@ -58,3 +60,5 @@ export class Post extends React.Component {
         this.setState({ post: data });
     }
 }
+
+export default withTranslation()(Post)

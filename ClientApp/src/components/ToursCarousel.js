@@ -1,10 +1,13 @@
 ﻿import * as React from 'react';
 import Carousel from 'react-multi-carousel';
+import { useLocation } from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
+import i18next from 'i18next';
+import { withTranslation } from 'react-i18next';
 import './css/ToursCarousel.css';
 import { Link } from "react-router-dom";
 
-export default class ToursCarousel extends React.Component {
+export class ToursCarousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = { tours: [], loading: true, filter: props.filter };
@@ -33,7 +36,7 @@ export default class ToursCarousel extends React.Component {
         const responsive = {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
-                items: 3,
+                items: 2,
                 partialVisibilityGutter: 40 // this is needed to tell the amount of px that should be visible.
             },
             tablet: {
@@ -45,7 +48,7 @@ export default class ToursCarousel extends React.Component {
                 breakpoint: { max: 464, min: 0 },
                 items: 1,
                 partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
-            }
+            }            
         };
 
         if (filter > 0) {
@@ -53,7 +56,7 @@ export default class ToursCarousel extends React.Component {
         }
 
         return (
-            <Carousel responsive={responsive} partialVisible={true}>
+            <Carousel responsive={responsive}>
                 {tours.map(tour =>
                     <Link to={"/tour/" + tour.id} key={tour.id}>
                         <div className="tour-item" key={tour.id} title={tour.title + " " + tour.content} style={{ backgroundImage: "url('/images/" + tour.images[0] + "')" }}>
@@ -63,6 +66,7 @@ export default class ToursCarousel extends React.Component {
                         </div>
                     </Link>
                 )}
+                <div className="tour-item see-more-tours"><span className="compass"></span><h5 className="tour-title ellipsis">{i18next.t("SeeAll")}</h5></div>
             </Carousel>
            );
     }
@@ -82,3 +86,5 @@ export default class ToursCarousel extends React.Component {
         this.setState({ tours: data, loading: false, filter: this.state.filter });
     }
 }
+
+export default withTranslation()(ToursCarousel)

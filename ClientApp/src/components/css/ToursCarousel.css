@@ -4,7 +4,6 @@
 }
 
 .tour-item {
-	min-width: 280px;
 	padding: 10px;
 	background-color: grey;
 	margin-right: 10px;
@@ -53,10 +52,25 @@
 		background-position: 3px 3px;
 		padding: 10px;
 	}
+	.tour-item.see-more-tours {
+		max-width: 150px;
+	}
 
-.tour-item .modality.modality-walk {
-	background-image: url(../../assets/icons/walking.svg);
-}
+	.tour-item.see-more-tours .compass {
+		background-image: url(../../assets/icons/compass.svg);
+		width: 80px;
+		height: 80px;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: 80px;
+		position: absolute;
+		top: 25%;
+		left: 22%;
+	}
+	.tour-item .modality.modality-walk {
+		background-image: url(../../assets/icons/walking.svg);
+	}
 
-.tour-item .modality.modality-bike {
-}
+	.tour-item .modality.modality-bike {
+		background-image: url(../../assets/icons/bike.svg);
+	}
