@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next';
 export default class Contributor extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { id: this.props.id, contributor: null };
+        this.state = { id: this.props.id, contributor: null, mode: this.props.mode};
     }
 
     render() {
@@ -16,8 +16,8 @@ export default class Contributor extends React.Component {
         }     
 
         return (
-            <div className="contributor">
-                <div className="contributor-photo" style={{ backgroundImage: "url('/images/" + this.state.contributor.image + "')" }}></div>
+            <div className={"contributor" + (this.state.mode == 1 ? " light": "")}>
+                <div className="contributor-photo" style={{ backgroundImage: "url('/images/" + this.state.contributor.image + "')" }} title={this.state.contributor.name}></div>
                 <div className="contributor-name">{this.state.contributor.name}</div>
             </div>
             );
@@ -26,7 +26,7 @@ export default class Contributor extends React.Component {
     async loadContributor() {
         const response = await fetch('contributors/' + this.state.id);
         const data = await response.json();
-        this.setState({ contributor: data });
+        this.setState(state => ({ contributor: data, mode: state.mode }));
     };
 }
 

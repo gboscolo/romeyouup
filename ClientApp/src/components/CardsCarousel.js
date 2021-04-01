@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './css/CardsCarousel.css';
 import { Link } from "react-router-dom";
+import Contributor from './Contributor';
 
 export default class CardsCarousel extends React.Component {
     constructor(props) {
@@ -59,7 +60,7 @@ export default class CardsCarousel extends React.Component {
                     <div className="post-item" key={post.id} title={post.title + " " + post.content} style={{ backgroundImage: "url('/images/" + post.images[0] + "')" }}>
                         <div className="overlay"></div>
                         <h5 className="post-title ellipsis">{post.title}</h5>
-                        <p className="post-author ellipsis">{post.author}</p>
+                            <Contributor id={post.author} mode={1}/>
                         </div>
                     </Link>
                 )}

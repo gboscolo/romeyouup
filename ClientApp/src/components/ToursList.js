@@ -30,8 +30,8 @@ export class ToursList extends React.Component {
                 <div className="container tours-list">
                     <TextFilter placeholder={i18next.t("ToursFilter")} className={"tours-filter"} onFilter={({ target: { value: filter } }) => this.setState(state => ({ tours: state.tours, filter: filter }))} />
                     {
-                        filteredTours.map(tour => 
-                            <TourSquare tour={tour}/>
+                        filteredTours.map(tour =>
+                            <TourSquare tour={tour} key={tour.id}/>
                         )
                     }
                 </div>

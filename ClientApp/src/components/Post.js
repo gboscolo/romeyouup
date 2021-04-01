@@ -27,7 +27,7 @@ export class Post extends React.Component {
                 <BrandHeader dark={true} />
                 <div className="container">
                     <h1 className="title">{this.state.post.title}</h1>
-                    <Contributor id={this.state.post.author}/>
+                    <Contributor id={this.state.post.author} mode={0}/>
                     
                     {imageCarousel}
 

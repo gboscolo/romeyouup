@@ -37,7 +37,13 @@ i18n.use(LanguageDetector).init({
                 English: "English",
                 Spanish: "Spanish",
                 Italian: "Italian",
-                ToursFilter: "Filter among the available tours"
+                ToursFilter: "Filter among the available tours",
+                YourName: "Your name",
+                YourEmail: "Your email address",
+                CompileAllFields: "Check on all required fields",
+                Send: "Send",
+                ContactUsMessage: "Mail us for suggestions or proposals, we'll be back soon!",
+                YourMessage: "Your message"
             }
         },
         it: {
@@ -73,7 +79,13 @@ i18n.use(LanguageDetector).init({
                 English: "Inglese",
                 Spanish: "Spagnolo",
                 Italian: "Italiano",
-                ToursFilter: "Filtra tra i tour disponibili"
+                ToursFilter: "Filtra tra i tour disponibili",
+                YourName: "Il tuo nome",
+                YourEmail: "La tua email",
+                CompileAllFields: "Compila tutti i campi richiesti",
+                Send: "Invia",
+                ContactUsMessage: "Scrivici per suggerimenti e richieste, sarai ricontattato al più presto!",
+                YourMessage: "Il tuo messaggio"
             }
         },
         es: {

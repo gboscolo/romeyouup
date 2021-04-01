@@ -1,0 +1,16 @@
+﻿.contacts-form {
+	margin-top: 30px;
+	padding: 20px 30px 20px 30px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.image-background {
+	background-image: url(../../assets/images/background.jpg);
+	background-size: 100% auto;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

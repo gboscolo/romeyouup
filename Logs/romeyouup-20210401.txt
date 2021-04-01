@@ -1,0 +1,249 @@
+2021-04-01T10:39:00.9777030+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T10:39:00.9863034+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T10:39:00.9864331+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T10:39:08.2126518+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T11:14:07.4072297+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T11:14:07.4210978+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T11:14:07.4224962+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T11:14:12.6270793+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T12:08:46.9572978+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T12:08:46.9684046+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T12:08:46.9685572+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T12:08:54.6456050+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T12:44:08.0332810+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T12:44:08.0393947+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T12:44:08.0395133+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T12:44:17.7831926+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T12:44:17.7993443+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T12:44:17.8012622+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T12:44:23.2597986+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T12:46:03.5800765+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T12:46:03.5950611+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T12:46:03.5966305+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T12:46:08.7557774+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T12:50:41.0521367+02:00 800001a7-0001-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-01T12:50:41.0549232+02:00 800001a7-0001-fa00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-04-01T12:50:41.1445359+02:00 800001a7-0001-fa00-b63f-84710c7967bb [ERR] Connection ID ""18014398515387564454"", Request ID ""800001a7-0001-fa00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-04-01T12:51:57.5531722+02:00  [FTL] Application startup exception (6c57a5ba)
+System.InvalidOperationException: Action 'romeyouup.Controllers.EmailController.SendEmail (romeyouup)' has more than one parameter that was specified or inferred as bound from request body. Only one parameter per action may be bound from body. Inspect the following parameters, and use 'FromQueryAttribute' to specify bound from query, 'FromRouteAttribute' to specify bound from route, and 'FromBodyAttribute' for parameters to be bound from body:
+string sender
+string name
+string message
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.ChangeTokenRegistration`1..ctor(Func`1 changeTokenProducer, Action`1 changeTokenConsumer, TState state)
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllerRoute(IEndpointRouteBuilder endpoints, String name, String pattern, Object defaults, Object constraints, Object dataTokens)
+   at romeyouup.Startup.<>c.<Configure>b__5_0(IEndpointRouteBuilder endpoints) in C:\Progetti\romeyouup\Startup.cs:line 73
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at romeyouup.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) in C:\Progetti\romeyouup\Startup.cs:line 71
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-04-01T12:54:32.7159328+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T12:54:32.7340380+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T12:54:32.7355974+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T12:54:38.6042833+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T13:31:16.3297607+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T13:31:16.3444379+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T13:31:16.3457763+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T13:31:21.5362148+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T13:36:36.0537173+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T13:36:36.0721723+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T13:36:36.0740854+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T13:36:41.3431250+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:26:33.3487813+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:26:33.3636925+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:26:33.3650086+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:26:39.9271561+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:29:44.4323550+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:29:44.4483468+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:29:44.4498989+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:29:49.7165491+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:45:37.5511009+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:45:37.5584982+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:45:37.5586882+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:45:43.3995081+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:46:16.6124268+02:00 8000036e-0004-fe00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe specified string is not in the form required for an e-mail address. (2c9f101b)
+2021-04-01T15:46:50.4543654+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:46:50.4693475+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:46:50.4707720+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:46:55.7886643+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:49:03.0307610+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:49:03.0451674+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:49:03.0466616+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:49:08.2634023+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:50:43.0395532+02:00 80000111-0003-f900-b63f-84710c7967bb [ERR] Error in Email/SendEmailFailure sending mail. (daf70463)
+2021-04-01T15:51:50.6420055+02:00 80000172-0006-f900-b63f-84710c7967bb [ERR] Error in Email/SendEmailFailure sending mail. (daf70463)
+2021-04-01T15:51:59.4662014+02:00 8000018f-0007-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.SendFrameFallbackAsync(MessageOpcode opcode, Boolean endOfMessage, ReadOnlyMemory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.SendFrameFallbackAsync(MessageOpcode opcode, Boolean endOfMessage, ReadOnlyMemory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-01T15:51:59.4682008+02:00 8000018f-0007-fc00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-04-01T15:51:59.5705615+02:00 8000018f-0007-fc00-b63f-84710c7967bb [ERR] Connection ID ""18158513729233224078"", Request ID ""8000018f-0007-fc00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.AggregateException: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.WebSockets.ManagedWebSocket.SendFrameFallbackAsync(MessageOpcode opcode, Boolean endOfMessage, ReadOnlyMemory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.SendFrameFallbackAsync(MessageOpcode opcode, Boolean endOfMessage, ReadOnlyMemory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.HandleReceivedPingPongAsync(MessageHeader header, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-04-01T15:53:21.3132094+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:53:21.3196459+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:53:21.3197979+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:53:26.9119635+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:54:05.8179137+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:54:05.8369801+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:54:05.8387182+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:54:11.1928193+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:55:43.7240511+02:00 8000015d-0000-e600-b63f-84710c7967bb [ERR] Error in Email/SendEmailFailure sending mail. (daf70463)
+2021-04-01T15:57:37.6420571+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:57:37.6589548+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:57:37.6605982+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:57:45.8449306+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T15:59:22.0767815+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T15:59:22.0918058+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T15:59:22.0932501+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T15:59:27.9056931+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T16:00:46.8930851+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T16:00:46.9099021+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T16:00:46.9114428+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T16:00:52.7179453+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T16:10:31.3947794+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T16:10:31.4045237+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T16:10:31.4130435+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T16:10:37.4462804+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T16:12:12.0839963+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T16:12:12.1025969+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T16:12:12.1044123+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T16:12:17.9762768+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T16:25:37.0940330+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T16:25:37.1019504+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T16:25:37.1022615+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T16:25:42.5936752+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-01T16:49:18.1504954+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-01T16:49:18.1560677+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-01T16:49:18.1561581+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-01T16:49:23.1712217+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
