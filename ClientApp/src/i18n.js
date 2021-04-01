@@ -36,7 +36,8 @@ i18n.use(LanguageDetector).init({
                 SelectLinguage: "Select linguage",
                 English: "English",
                 Spanish: "Spanish",
-                Italian: "Italian"
+                Italian: "Italian",
+                ToursFilter: "Filter among the available tours"
             }
         },
         it: {
@@ -71,7 +72,8 @@ i18n.use(LanguageDetector).init({
                 SelectLinguage: "Seleziona lingua",
                 English: "Inglese",
                 Spanish: "Spagnolo",
-                Italian: "Italiano"
+                Italian: "Italiano",
+                ToursFilter: "Filtra tra i tour disponibili"
             }
         },
         es: {

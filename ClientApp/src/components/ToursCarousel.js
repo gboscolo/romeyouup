@@ -1,5 +1,6 @@
 ﻿import * as React from 'react';
 import Carousel from 'react-multi-carousel';
+import { TourSquare } from './TourSquare';
 import { useLocation } from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
 import i18next from 'i18next';
@@ -58,26 +59,13 @@ export class ToursCarousel extends React.Component {
         return (
             <Carousel responsive={responsive}>
                 {tours.map(tour =>
-                    <Link to={"/tour/" + tour.id} key={tour.id}>
-                        <div className="tour-item" key={tour.id} title={tour.title + " " + tour.content} style={{ backgroundImage: "url('/images/" + tour.images[0] + "')" }}>
-                        {ToursCarousel.GetModalityBadge(tour.modality)}
-                        <div className="overlay"></div>
-                        <h5 className="tour-title ellipsis">{tour.title}</h5>
-                        </div>
-                    </Link>
+                    <TourSquare key={tour.id} tour={tour}/>
                 )}
-                <div className="tour-item see-more-tours"><span className="compass"></span><h5 className="tour-title ellipsis">{i18next.t("SeeAll")}</h5></div>
+                <Link to={"/tourslist/"}>
+                    <div className="tour-item see-more-tours"><span className="compass"></span><h5 className="tour-title ellipsis">{i18next.t("SeeAll")}</h5></div>
+                </Link>
             </Carousel>
            );
-    }
-
-    static GetModalityBadge(modality) {
-        switch (modality) {
-            case 1:
-                return (<span className="modality modality-walk"></span>);
-            case 2:
-                return (<span className="modality modality-bike"></span>);
-        }
     }
 
     async getToursData() {

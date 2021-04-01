@@ -1,0 +1,28 @@
+﻿.globe {
+	width:30px;
+	height: 30px;
+	background-image: url(../../assets/icons/globe-white.svg);
+	background-size: 30px;
+	display:inline-block;
+	margin-right: 10px;
+}
+.dark .globe {
+	background-image: url(../../assets/icons/globe-grey.svg);
+}
+.language-label {
+	vertical-align: top;
+	padding-top: 5px;
+	display: inline-block;
+}
+
+.language-popover-item {
+}
+
+.language-popover-row {
+	font-family: Leelawadee;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 5px;
+	cursor: pointer;
+}

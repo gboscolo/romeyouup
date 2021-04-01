@@ -1,0 +1,19 @@
+﻿.contributor-photo {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-size: 50px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.contributor {
+	position: relative;
+}
+
+.contributor-name {
+	position: absolute;
+	width: 300px;
+	left: 60px;
+	top: 10px;
+}

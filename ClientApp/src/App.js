@@ -4,7 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Post } from './components/Post';
 import { Tour } from './components/Tour';
-import { FetchData } from './components/FetchData';
+import { ToursList } from './components/ToursList';
 import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
 import { Contacts } from './components/Contacts';
@@ -22,10 +22,10 @@ export default class App extends Component {
             <Route path='/administration' component={Administration} />
             <Route path='/post/:id' component={Post} />
             <Route path='/tour/:id' component={Tour} />
+            <Route path='/tourslist' component={ToursList} />
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
-            <Route path='/ourproposals' component={OurProposals} />
-            <Route path='/fetchdata' component={FetchData} />
+            <Route path='/ourproposals' component={ToursList} />
       </Layout>
     );
   }

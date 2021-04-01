@@ -2,6 +2,7 @@
 import BrandHeader from './BrandHeader';
 import Footer from './Footer';
 import CardsCarousel from './CardsCarousel';
+import Contributor from './Contributor';
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import './css/Post.css';
@@ -26,7 +27,7 @@ export class Post extends React.Component {
                 <BrandHeader dark={true} />
                 <div className="container">
                     <h1 className="title">{this.state.post.title}</h1>
-                    <h5 className="subtitle">{i18next.t("From")}: {this.state.post.author}</h5>
+                    <Contributor id={this.state.post.author}/>
                     
                     {imageCarousel}
 
