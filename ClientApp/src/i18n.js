@@ -43,7 +43,11 @@ i18n.use(LanguageDetector).init({
                 CompileAllFields: "Check on all required fields",
                 Send: "Send",
                 ContactUsMessage: "Mail us for suggestions or proposals, we'll be back soon!",
-                YourMessage: "Your message"
+                YourMessage: "Your message",
+                CompileField: "Insert a value for this field",
+                NotValidEmail: "The email address is not valid",
+                ErrorWhileMailing: "An error occured while sending the email, please retry later!",
+                SuccessWhileMailing: "We have received your message, please check for our response your inbox or your spam folder!"
             }
         },
         it: {
@@ -85,7 +89,11 @@ i18n.use(LanguageDetector).init({
                 CompileAllFields: "Compila tutti i campi richiesti",
                 Send: "Invia",
                 ContactUsMessage: "Scrivici per suggerimenti e richieste, sarai ricontattato al più presto!",
-                YourMessage: "Il tuo messaggio"
+                YourMessage: "Il tuo messaggio",
+                CompileField: "Inserisci un valore per questo campo",
+                NotValidEmail: "La mail non è valida",
+                ErrorWhileMailing: "É avvenuto un errore durante l'invio del messaggio, riprova più tardi!",
+                SuccessWhileMailing: "Abbiamo ricevuto il tuo messaggio! Controlla nella tua email se hai ricevuto la risposta, eventualmente controlla nella cartella di posta indesiderata!"
             }
         },
         es: {

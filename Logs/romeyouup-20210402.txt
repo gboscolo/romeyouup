@@ -1,0 +1,43 @@
+2021-04-02T22:47:37.2792547+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-02T22:47:37.2882384+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-02T22:47:37.2883593+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-02T22:47:45.9950081+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-02T23:09:17.5896968+02:00 800004f5-0005-ff00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:18.7866373+02:00 80000417-0001-f900-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.0256337+02:00 800004f7-0005-ff00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.1535095+02:00 8000019b-0006-f800-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.3799357+02:00 80000107-0003-fb00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.5565350+02:00 800004f9-0004-fe00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.6849311+02:00 800001e5-0006-f600-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:19.8657126+02:00 80000084-0000-e200-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:09:20.0588582+02:00 800004f9-0005-ff00-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:10:05.3690418+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-02T23:10:05.3856378+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-02T23:10:05.3871121+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-02T23:10:13.6522182+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-02T23:10:48.2324308+02:00 800001eb-0006-f600-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:11:35.4253079+02:00 800001ed-0006-f600-b63f-84710c7967bb [ERR] Error in Email/SendEmailThe parameter 'to' cannot be an empty string. (Parameter 'to') (99c32b07)
+2021-04-02T23:12:05.6600533+02:00 80000190-0002-f700-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.TimeoutException: The create-react-app server did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-02T23:16:53.9448611+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-02T23:16:53.9528191+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-02T23:16:53.9529459+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-02T23:16:59.3268247+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-02T23:43:29.7044757+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-02T23:43:29.7204322+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-02T23:43:29.7223750+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-02T23:43:35.0357870+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-02T23:44:54.1288577+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-02T23:44:54.1404800+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-02T23:44:54.1420880+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-02T23:44:59.3750973+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)

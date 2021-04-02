@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using romeyouup.Core.Utilities;
 using romeyouup.DataLayer.Models;
 
 namespace romeyouup.Controllers
@@ -17,6 +18,7 @@ namespace romeyouup.Controllers
 	{
 		private readonly ILogger<EmailController> _logger;
 		private IConfiguration _configuration;
+		private string key = "r0mey0uup";
 
 		public EmailController(ILogger<EmailController> logger, IConfiguration configuration)
 		{
@@ -27,7 +29,6 @@ namespace romeyouup.Controllers
 		[HttpPost()]
 		public ActionResult SendEmail([FromBody]Email email)
 		{
-			//this.GetSmtpClient().Send("noreply@romeyouup.it", "gian.boscolo@hotmail.it", "CIAO BIBI", "body");
 			try
 			{
 				List<string> infoRequestsRecipients = this._configuration["Smtp:InfoRequestsRecipients"].Split("|").ToList();
@@ -46,7 +47,17 @@ namespace romeyouup.Controllers
 					client.Send(mailMessage);
 				}
 
-				client.Send(this._configuration["Smtp:Username"], email.Sender, this._configuration["Smtp:InfoEmailSubject"], "Ciao! Abbiamo ricevuto la tua richiesta di informazioni, sarai ricontattato al più presto!");
+				string responseText = System.IO.File.ReadAllText("./Templates/requestinfo.html");
+
+				var responseMessage = new MailMessage
+				{
+					From = new MailAddress(this._configuration["Smtp:Username"], this._configuration["Smtp:Userlabel"]),
+					Subject = this._configuration["Smtp:InfoEmailSubject"],
+					Body = responseText,
+					IsBodyHtml = true,
+				};
+				responseMessage.To.Add(email.Sender);
+				client.Send(responseMessage);
 
 				return StatusCode(200);
 			}
@@ -63,7 +74,7 @@ namespace romeyouup.Controllers
 			return new SmtpClient(this._configuration["Smtp:Host"])
 			{
 				Port = Convert.ToInt32(this._configuration["Smtp:Port"]),
-				Credentials = new NetworkCredential(this._configuration["Smtp:Username"], this._configuration["Smtp:Password"]),
+				Credentials = new NetworkCredential(this._configuration["Smtp:Username"], StringExtender.DecryptRijndael(this._configuration["Smtp:Password"], this.key)),
 				EnableSsl = true
 			};
 		}
