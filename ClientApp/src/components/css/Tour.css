@@ -49,9 +49,23 @@ body {
 .additional-info {
 	padding: 20px;
 	border-radius: 10px;
-	background-color: #F2A643;
+	color: white;
+	background-color: #333333;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+#anchor-book {
+	background-color: #F2A643;
+	border: none;
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	text-align: center;
+	color: black !important;
 }
 
 .description {

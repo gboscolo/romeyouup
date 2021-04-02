@@ -47,7 +47,8 @@ i18n.use(LanguageDetector).init({
                 CompileField: "Insert a value for this field",
                 NotValidEmail: "The email address is not valid",
                 ErrorWhileMailing: "An error occured while sending the email, please retry later!",
-                SuccessWhileMailing: "We have received your message, please check for our response your inbox or your spam folder!"
+                SuccessWhileMailing: "We have received your message, please check for our response your inbox or your spam folder!",
+                TourRequestInfo: "Book this experience or ask us more informations!"
             }
         },
         it: {
@@ -93,7 +94,8 @@ i18n.use(LanguageDetector).init({
                 CompileField: "Inserisci un valore per questo campo",
                 NotValidEmail: "La mail non è valida",
                 ErrorWhileMailing: "É avvenuto un errore durante l'invio del messaggio, riprova più tardi!",
-                SuccessWhileMailing: "Abbiamo ricevuto il tuo messaggio! Controlla nella tua email se hai ricevuto la risposta, eventualmente controlla nella cartella di posta indesiderata!"
+                SuccessWhileMailing: "Abbiamo ricevuto il tuo messaggio! Controlla nella tua email se hai ricevuto la risposta, eventualmente controlla nella cartella di posta indesiderata!",
+                TourRequestInfo: "Prenota questa esperienza o chiedici maggiori informazioni!"
             }
         },
         es: {

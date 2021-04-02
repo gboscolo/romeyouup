@@ -2,8 +2,11 @@
 import BrandHeader from './BrandHeader';
 import Footer from './Footer';
 import { ToursCarousel } from './ToursCarousel';
+import { ContactForm } from './ContactForm';
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Button } from 'reactstrap';
 import './css/Tour.css';
 
 
@@ -35,6 +38,7 @@ export class Tour extends React.Component {
                                 <div><span className="highlight-title">{i18next.t("Modality")}:</span> {Tour.GetModalityString(this.state.tour.modality)}</div>
                                 <div><span className="highlight-title">{i18next.t("Cost")}:</span> {this.state.tour.cost}€ {i18next.t("ForPerson")}</div>
                             </div>
+                            <AnchorLink href='#book' id="anchor-book">Prenota!</AnchorLink>
                             <div><div className="highlight-title">{i18next.t("WhatWeWillSee")}:</div> <div className="description">{this.state.tour.willSee}</div></div>
                     </div>
                     <div className="col-xl-6 col-md-12">
@@ -56,8 +60,16 @@ export class Tour extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Footer/>
-                </div>
+                <div className="container">
+                <div className="row">
+                        <div className="col-xl-12 col-md-12">
+                            <h3 id="book">{i18next.t("TourRequestInfo")}</h3>
+                            <ContactForm textareaMessage={i18next.t("YourMessage")} />
+                    </div>
+                    </div>
+                    </div>
+            <Footer/>
+            </div>
         );
     }
     static GetModalityString(modality) {
