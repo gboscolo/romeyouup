@@ -7,7 +7,6 @@ namespace romeyouup.DataLayer.Models
 {
 	public class Post
 	{
-		private DataContext context;
 		public int Id { get; set; }
 		public string Author { get; set; }
 		public string Title { get; set; }

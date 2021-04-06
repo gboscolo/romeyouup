@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace romeyouup.DataLayer.Models
 {
-	public class DataContext
+	public class PostContext
 	{
         public string ConnectionString { get; set; }
 
-        public DataContext(string connectionString)
+        public PostContext(string connectionString)
         {
             this.ConnectionString = connectionString;
         }

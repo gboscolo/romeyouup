@@ -26,7 +26,7 @@ namespace romeyouup.Controllers
 			try
 			{
 				this._logger.LogDebug("Entering in Posts/Get");
-				DataContext context = HttpContext.RequestServices.GetService(typeof(DataContext)) as DataContext;
+				PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
 				return context.GetAll();
 			}
 			catch (Exception ex)
@@ -42,7 +42,7 @@ namespace romeyouup.Controllers
 			try
 			{
 				this._logger.LogDebug("Entering in Posts/GetPost");
-				DataContext context = HttpContext.RequestServices.GetService(typeof(DataContext)) as DataContext;
+				PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
 				return context.GetPost(id);
 			}
 			catch (Exception exception)

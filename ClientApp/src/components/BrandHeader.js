@@ -9,6 +9,7 @@ import { slide as Menu } from 'react-burger-menu';
 import { Link } from "react-router-dom";
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
+import { LoginMenu } from './api-authorization/LoginMenu';
 
 export class BrandHeader extends React.Component {
     constructor(props) {
@@ -25,7 +26,8 @@ export class BrandHeader extends React.Component {
                     <Link className="link" to="/WhoWeAre">{i18next.t("WhoWeAre")}</Link>
                     <Link className="link middle" to="/OurProposals">{i18next.t("OurProposals")}</Link>
                     <Link className="link" to="/Contacts">{i18next.t("Contacts")}</Link>
-
+                    <LoginMenu>
+                    </LoginMenu>
                     <Language/>
                 </div>
             </div>

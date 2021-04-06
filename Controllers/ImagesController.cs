@@ -28,7 +28,7 @@ namespace romeyouup.Controllers
 			try
 			{
 				this._logger.LogDebug("Entering in Images/GetImage");
-				DataContext context = HttpContext.RequestServices.GetService(typeof(DataContext)) as DataContext;
+				PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
 				Image image = context.GetImage(id);
 				if (!string.IsNullOrEmpty(image.Content))
 				{

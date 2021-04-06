@@ -39,7 +39,7 @@ namespace romeyouup.Controllers
 
         public ActionResult GetAll()
         {
-            DataContext context = HttpContext.RequestServices.GetService(typeof(DataContext)) as DataContext;
+            PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
             return new JsonResult(context.GetAll());
         }
     }
