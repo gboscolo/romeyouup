@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next';
 export default class Contributor extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { id: this.props.id, contributor: null, mode: this.props.mode};
+        this.state = { id: this.props.id, contributor: this.props.contributor, mode: this.props.mode};
     }
 
     render() {

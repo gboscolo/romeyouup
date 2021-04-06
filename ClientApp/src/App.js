@@ -9,6 +9,11 @@ import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
 import { Contacts } from './components/Contacts';
 import { OurProposals } from './components/OurProposals';
+import Login from './components/Login';
+
+import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
+
 
 import './custom.css'
 
@@ -26,6 +31,7 @@ export default class App extends Component {
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
             <Route path='/ourproposals' component={ToursList} />
+            <Route path='/login' component={Login} />
       </Layout>
     );
   }

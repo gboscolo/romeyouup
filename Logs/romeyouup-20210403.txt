@@ -3,3 +3,12 @@
 2021-04-03T00:17:19.2433759+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
 2021-04-03T00:17:25.0887965+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
  (02daff8f)
+2021-04-03T00:53:47.9977966+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-03T00:53:48.0035390+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-03T00:53:48.0036416+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-03T00:54:02.4097350+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-03T00:54:02.4167135+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-03T00:54:02.4167888+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-03T00:54:07.2954813+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-03T00:56:10.4219326+02:00 800001de-0004-fd00-b63f-84710c7967bb [ERR] Error in GetContributor/GetContributors (bf12a57d)

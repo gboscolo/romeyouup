@@ -2,6 +2,7 @@
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import BrandHeader from './BrandHeader';
+import  ContributorsList  from './ContributorsList';
 
 export class WhoWeAre extends React.Component {
     constructor(props) {
@@ -10,6 +11,8 @@ export class WhoWeAre extends React.Component {
     }
 
     render() {
-        return (<BrandHeader dark={true} />);
+        return (<div><BrandHeader dark={true} />
+            <ContributorsList />
+        </div>);
     }
 }

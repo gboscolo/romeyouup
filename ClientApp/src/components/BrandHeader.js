@@ -25,6 +25,7 @@ export class BrandHeader extends React.Component {
                     <Link className="link" to="/WhoWeAre">{i18next.t("WhoWeAre")}</Link>
                     <Link className="link middle" to="/OurProposals">{i18next.t("OurProposals")}</Link>
                     <Link className="link" to="/Contacts">{i18next.t("Contacts")}</Link>
+
                     <Language/>
                 </div>
             </div>
