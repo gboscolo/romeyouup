@@ -1,0 +1,653 @@
+2021-04-07T10:19:11.3708043+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T10:19:11.6613233+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T10:19:11.9947490+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T10:19:12.0089663+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T10:19:12.0107203+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T10:19:21.1558523+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T10:19:40.6156139+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T10:19:40.8586062+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T10:19:41.1481333+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T10:19:41.1497504+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T10:19:41.1512843+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T10:19:49.7925403+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T10:20:04.1812189+02:00 8000023c-0006-fd00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T10:20:04.2726656+02:00 800005fd-0000-e500-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:20:04.3243838+02:00 800005fd-0000-e500-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T10:20:04.3646923+02:00 800005fd-0000-e500-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "a1f42a309cff4b1ea26f1ba9d9786ceb", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "a1f42a309cff4b1ea26f1ba9d9786ceb"), ("code_challenge": "6MYW0P7ltnAunqz07_YVGAF-_gPTM9TLxrchKw85ebc"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T10:20:04.3882190+02:00 800005fd-0000-e500-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "800005fd-0000-e500-b63f-84710c7967bb", TimeStamp: 04/07/2021 08:20:04, ProcessId: 26380, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T10:20:08.8900535+02:00 80000397-0004-f900-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:20:09.2518229+02:00 80000397-0004-f900-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T10:20:38.4592298+02:00 800007a0-0004-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T10:20:38.4896702+02:00 800007a2-0004-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:20:38.4944418+02:00 800007a2-0004-fe00-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T10:20:38.4991465+02:00 800007a2-0004-fe00-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "b44dd4c1e6774d07881568e36f5da568", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "b44dd4c1e6774d07881568e36f5da568"), ("code_challenge": "8aKod0sfM6Ka0qhzpxWkkzZ08aJh2kbnzDGAR8i3ghA"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T10:20:38.5026936+02:00 800007a2-0004-fe00-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "800007a2-0004-fe00-b63f-84710c7967bb", TimeStamp: 04/07/2021 08:20:38, ProcessId: 26380, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T10:20:42.8277443+02:00 800003a3-0004-f900-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:20:43.0834827+02:00 800003a3-0004-f900-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T10:34:33.2555902+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T10:34:33.5331854+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T10:34:33.8223106+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T10:34:33.8305474+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T10:34:33.8320465+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T10:34:41.4348338+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T10:35:08.8895227+02:00 8000031b-0003-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T10:35:08.9998410+02:00 800001ed-0006-f800-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:35:09.0508692+02:00 800001ed-0006-f800-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T10:35:09.0824622+02:00 800001ed-0006-f800-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "7975d005565e43db8ef158f04f0b8952", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "7975d005565e43db8ef158f04f0b8952"), ("code_challenge": "nmKsB8dcpsN9bCCWCh4dsPm5zQ4vnR9xyWniwTQ2JM8"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T10:35:09.1033644+02:00 800001ed-0006-f800-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "800001ed-0006-f800-b63f-84710c7967bb", TimeStamp: 04/07/2021 08:35:09, ProcessId: 27104, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T10:35:14.2629265+02:00 800003ae-0007-ff00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T10:35:14.4394956+02:00 800003ae-0007-ff00-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T13:26:12.9069469+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T13:26:13.1178324+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T13:26:13.3487607+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T13:26:13.3502977+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T13:26:13.3518639+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T13:26:19.6255147+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T13:26:30.2657285+02:00 80000858-0004-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T13:26:30.3657988+02:00 800005cb-0000-e600-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T13:26:30.4060221+02:00 800005cb-0000-e600-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T13:26:30.4851149+02:00 800005cb-0000-e600-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "8a12d411d35f487bbab83c9f3c671de4", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "8a12d411d35f487bbab83c9f3c671de4"), ("code_challenge": "W2sIMA7_n3Mw_yZXC8huAAkMOsVN4bEbpSSmiPtGH-c"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T13:26:30.5074227+02:00 800005cb-0000-e600-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "800005cb-0000-e600-b63f-84710c7967bb", TimeStamp: 04/07/2021 11:26:30, ProcessId: 4516, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T13:26:35.1456521+02:00 8000024e-0001-fa00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T13:26:35.2469151+02:00 8000024e-0001-fa00-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T13:29:37.0489636+02:00 80000544-0002-f800-b63f-84710c7967bb [ERR] Error in GetContributor/GetContributors (bf12a57d)
+2021-04-07T13:31:08.6176758+02:00 80000302-0006-fd00-b63f-84710c7967bb [WRN] User "57553ba4-4afa-4b58-8c8d-c9e7e0e53f48" password validation failed: "PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper". (2f223212)
+2021-04-07T13:31:24.7615322+02:00 80000143-0003-fa00-b63f-84710c7967bb [WRN] User "8e213b52-8072-4919-9d0e-e62604a35176" password validation failed: "PasswordRequiresNonAlphanumeric". (2f223212)
+2021-04-07T13:31:39.1806301+02:00 8000061e-0000-e500-b63f-84710c7967bb [ERR] Failed executing DbCommand ("457"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256), @p18='?' (DbType = Int32), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `FirstName`, `LastName`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `Password`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`, `UserType`, `Username`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (627a98df)
+2021-04-07T13:31:39.8613322+02:00 8000061e-0000-e500-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"romeyouup.Helpers.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+2021-04-07T13:31:41.7162681+02:00 8000061e-0000-e500-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T13:35:02.3127352+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T13:35:02.4956886+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T13:35:02.7126747+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T13:35:02.7151551+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T13:35:02.7170061+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T13:35:07.7843698+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T13:38:22.1695790+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T13:38:22.2928080+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T13:38:22.4047854+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T13:38:22.4048555+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T13:38:22.4048954+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T13:38:27.4858173+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T13:39:36.4139886+02:00 8000014d-0003-fa00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256), @p18='?' (DbType = Int32), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `FirstName`, `LastName`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `Password`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`, `UserType`, `Username`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (627a98df)
+2021-04-07T13:39:36.4666317+02:00 8000014d-0003-fa00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"romeyouup.Helpers.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+2021-04-07T13:39:36.4864184+02:00 8000014d-0003-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T14:05:51.9084549+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T14:05:52.0884658+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T14:05:52.3157788+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T14:05:52.3195961+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T14:05:52.3279394+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T14:05:57.6675094+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T14:06:53.2435202+02:00 80000014-0005-f900-b63f-84710c7967bb [ERR] Failed executing DbCommand ("316"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256), @p18='?' (DbType = Int32), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `FirstName`, `LastName`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `Password`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`, `UserType`, `Username`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (627a98df)
+2021-04-07T14:06:53.8519248+02:00 80000014-0005-f900-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"romeyouup.Helpers.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+2021-04-07T14:06:55.9015825+02:00 80000014-0005-f900-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T14:07:43.6025908+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T14:07:43.7981705+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T14:07:44.0159556+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T14:07:44.0177677+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T14:07:44.0200452+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T14:07:49.7131901+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T14:27:51.6938828+02:00 80000542-0004-f900-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:54869/static/media/card.b3cb07f3.jpg, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:54869/.
+
+The underlying exception message was 'An error occurred while sending the request.'.Check the InnerException for more details.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connessione interrotta dal software del computer host..
+ ---> System.Net.Sockets.SocketException (10053): Connessione interrotta dal software del computer host.
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T14:34:07.2317239+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T14:34:07.5064080+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T14:34:08.1863340+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T14:34:08.1884334+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T14:34:08.1931457+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T14:34:15.6383301+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T14:34:26.5927644+02:00 800005d9-0000-e600-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:34:26.7182144+02:00 8000041a-0002-fc00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:34:26.7770042+02:00 8000041a-0002-fc00-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T14:34:26.8113491+02:00 8000041a-0002-fc00-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "c4083e917e6242e1931b1062dd978c0c", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "c4083e917e6242e1931b1062dd978c0c"), ("code_challenge": "1VhpQ1tPzijv_woHUYlVOQphv0KmFdv4skXQGmzfsoE"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T14:34:26.8377327+02:00 8000041a-0002-fc00-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "8000041a-0002-fc00-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:34:26, ProcessId: 41640, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T14:34:31.6334974+02:00 80000822-0007-fb00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:34:31.8504198+02:00 80000822-0007-fb00-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T14:35:01.9870963+02:00 80000424-0002-fc00-b63f-84710c7967bb [WRN] User "348ae79a-8fd7-4633-ae7c-908a1c7f8efb" password validation failed: "PasswordRequiresUpper". (2f223212)
+2021-04-07T14:35:14.7203341+02:00 80001964-0004-fb00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("642"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `t`.`Id`, `t`.`AccessFailedCount`, `t`.`ConcurrencyStamp`, `t`.`Email`, `t`.`EmailConfirmed`, `t`.`FirstName`, `t`.`LastName`, `t`.`LockoutEnabled`, `t`.`LockoutEnd`, `t`.`NormalizedEmail`, `t`.`NormalizedUserName`, `t`.`Password`, `t`.`PasswordHash`, `t`.`PhoneNumber`, `t`.`PhoneNumberConfirmed`, `t`.`SecurityStamp`, `t`.`TwoFactorEnabled`, `t`.`UserName`, `t`.`UserType`, `t`.`Username0`, `r`.`Id`, `r`.`Created`, `r`.`CreatedByIp`, `r`.`Expires`, `r`.`ReplacedByToken`, `r`.`Revoked`, `r`.`RevokedByIp`, `r`.`Token`, `r`.`UserId`
+FROM (
+    SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`FirstName`, `a`.`LastName`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`TwoFactorEnabled`, `a`.`UserName`, `a`.`UserType`, `a`.`Username` AS `Username0`
+    FROM `AspNetUsers` AS `a`
+    WHERE `a`.`NormalizedUserName` = @__normalizedUserName_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `RefreshToken` AS `r` ON `t`.`Id` = `r`.`UserId`
+ORDER BY `t`.`Id`, `r`.`Id`" (627a98df)
+2021-04-07T14:35:15.1559794+02:00 80001964-0004-fb00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"romeyouup.Helpers.DataContext"'."
+""MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2021-04-07T14:35:19.1435731+02:00 80001964-0004-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'a.LastName' in 'field list'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateUserName(UserManager`1 manager, TUser user, ICollection`1 errors)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.ValidateAsync(UserManager`1 manager, TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T14:36:42.4124851+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T14:36:42.5825384+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T14:36:42.7110333+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T14:36:42.7110955+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T14:36:42.7111297+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T14:36:42.7991386+02:00 8000068a-0007-fd00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:36:42.9248108+02:00 80001966-0004-fb00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:36:42.9735505+02:00 80001966-0004-fb00-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T14:36:43.0014600+02:00 80001966-0004-fb00-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "bc7d4065a5184df7aac0a3411f97d580", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "bc7d4065a5184df7aac0a3411f97d580"), ("code_challenge": "ungCLTSVyDq62UZZIhE8Kj67woDggjZr_8yh69BrcQY"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T14:36:43.0199550+02:00 80001966-0004-fb00-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "80001966-0004-fb00-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:36:43, ProcessId: 12760, LocalIpAddress: "127.0.0.1:44305", RemoteIpAddress: "127.0.0.1" } (92ad9b33)
+2021-04-07T14:36:51.5467367+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T14:36:53.6979218+02:00 800003bb-0005-fb00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:36:53.7044178+02:00 800003bb-0005-fb00-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T14:37:01.6960345+02:00 800002d0-0006-f600-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:37:01.7231649+02:00 80000188-0000-e200-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:37:01.7262366+02:00 80000188-0000-e200-b63f-84710c7967bb [INF] Showing error: prompt=none was requested but user is not authenticated (47a79906)
+2021-04-07T14:37:01.7285534+02:00 80000188-0000-e200-b63f-84710c7967bb [INF] AuthorizeRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", AllowedRedirectUris: ["/authentication/login-callback"], SubjectId: "anonymous", ResponseType: "code", ResponseMode: "query", GrantType: "authorization_code", RequestedScopes: "romeyouupAPI openid profile", State: "20a5a5743cef41e7aa552617260bd8ea", UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "none", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "romeyouup"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("response_type": "code"), ("scope": "romeyouupAPI openid profile"), ("state": "20a5a5743cef41e7aa552617260bd8ea"), ("code_challenge": "eaURA5RC1jN50hyQgDrUhmMAmDsneoWxabd8NzGfll8"), ("code_challenge_method": "S256"), ("prompt": "none"), ("response_mode": "query")] } (28fd41e2)
+2021-04-07T14:37:01.7328663+02:00 80000188-0000-e200-b63f-84710c7967bb [INF] TokenIssuedFailureEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: null, Scopes: "romeyouupAPI openid profile", GrantType: "authorization_code", Error: "login_required", ErrorDescription: null, Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "80000188-0000-e200-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:37:01, ProcessId: 12760, LocalIpAddress: "127.0.0.1:44305", RemoteIpAddress: "127.0.0.1" } (92ad9b33)
+2021-04-07T14:37:06.4003702+02:00 80000428-0002-fc00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:37:06.6196043+02:00 80000428-0002-fc00-b63f-84710c7967bb [INF] Showing login: User is not authenticated (4b8d50b2)
+2021-04-07T14:37:28.2242470+02:00 800005e7-0000-e600-b63f-84710c7967bb [ERR] Failed executing DbCommand ("373"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256), @p18='?' (DbType = Int32), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `FirstName`, `LastName`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `Password`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`, `UserType`, `Username`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (627a98df)
+2021-04-07T14:37:28.9466070+02:00 800005e7-0000-e600-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"romeyouup.Helpers.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2021-04-07T14:37:31.3681328+02:00 800005e7-0000-e600-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'UserName' specified twice
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 816
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 437
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 310
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 304
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.RegisterModel`1.OnPostAsync(String returnUrl)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-07T14:49:55.8795737+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-07T14:49:56.0712449+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-07T14:49:56.3107109+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-07T14:49:56.3119744+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-07T14:49:56.3133488+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-07T14:50:02.4760819+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-07T14:51:49.7801131+02:00 800002e4-0006-f600-b63f-84710c7967bb [WRN] Invalid password for user "82c4acf1-6d99-4cad-8f24-c3759df74528". (c2dce6c7)
+2021-04-07T14:51:49.7835945+02:00 800002e4-0006-f600-b63f-84710c7967bb [WRN] User "82c4acf1-6d99-4cad-8f24-c3759df74528" failed to provide the correct password. (ec8d2479)
+2021-04-07T14:51:56.5359898+02:00 8000042e-0002-fc00-b63f-84710c7967bb [WRN] Invalid password for user "82c4acf1-6d99-4cad-8f24-c3759df74528". (c2dce6c7)
+2021-04-07T14:51:56.5379579+02:00 8000042e-0002-fc00-b63f-84710c7967bb [WRN] User "82c4acf1-6d99-4cad-8f24-c3759df74528" failed to provide the correct password. (ec8d2479)
+2021-04-07T14:52:08.9005885+02:00 80000336-0006-fd00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:08.9796914+02:00 80000813-0005-fa00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize" (f7642de5)
+2021-04-07T14:52:09.2337033+02:00 80000813-0005-fa00-b63f-84710c7967bb [INF] TokenIssuedSuccessEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: "https://localhost:44305/authentication/login-callback", Endpoint: "Authorize", SubjectId: "82c4acf1-6d99-4cad-8f24-c3759df74528", Scopes: "openid profile romeyouupAPI", GrantType: "authorization_code", Tokens: [Token { TokenType: "code", TokenValue: "****3w74" }], Category: "Token", Name: "Token Issued Success", EventType: Success, Id: 2000, Message: null, ActivityId: "80000813-0005-fa00-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:52:09, ProcessId: 30068, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T14:52:14.0916639+02:00 80000026-0005-f900-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.TokenEndpoint" for "/connect/token" (f7642de5)
+2021-04-07T14:52:14.6795377+02:00 80000026-0005-f900-b63f-84710c7967bb [INF] ClientAuthenticationSuccessEvent { ClientId: "romeyouup", AuthenticationMethod: "NoSecret", Category: "Authentication", Name: "Client Authentication Success", EventType: Success, Id: 1010, Message: null, ActivityId: "80000026-0005-f900-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:52:14, ProcessId: 30068, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T14:52:14.7481867+02:00 80000026-0005-f900-b63f-84710c7967bb [INF] Token request validation success, TokenRequestValidationLog { ClientId: "romeyouup", ClientName: "romeyouup", GrantType: "authorization_code", Scopes: null, AuthorizationCode: "AcwDTvvCvOYBHdFH7hkwAR3Dij20wmJnMh8dJ0W3w74", RefreshToken: null, UserName: null, AuthenticationContextReferenceClasses: null, Tenant: null, IdP: null, Raw: [("client_id": "romeyouup"), ("code": "AcwDTvvCvOYBHdFH7hkwAR3Dij20wmJnMh8dJ0W3w74"), ("redirect_uri": "https://localhost:44305/authentication/login-callback"), ("code_verifier": "c8d5b11ed68c4941ac5ccf23c4b4c65416c50f1eecc2425ab91b610dcd92f8354f5f43edce264576b652164a3437c1da"), ("grant_type": "authorization_code")] } (3a073258)
+2021-04-07T14:52:14.8681085+02:00 80000026-0005-f900-b63f-84710c7967bb [INF] TokenIssuedSuccessEvent { ClientId: "romeyouup", ClientName: "romeyouup", RedirectUri: null, Endpoint: "Token", SubjectId: "82c4acf1-6d99-4cad-8f24-c3759df74528", Scopes: "openid profile romeyouupAPI", GrantType: "authorization_code", Tokens: [Token { TokenType: "id_token", TokenValue: "****QdXg" }, Token { TokenType: "access_token", TokenValue: "****9oiA" }], Category: "Token", Name: "Token Issued Success", EventType: Success, Id: 2000, Message: null, ActivityId: "80000026-0005-f900-b63f-84710c7967bb", TimeStamp: 04/07/2021 12:52:14, ProcessId: 30068, LocalIpAddress: "::1:44305", RemoteIpAddress: "::1" } (92ad9b33)
+2021-04-07T14:52:15.0351708+02:00 8000063e-0000-e500-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.UserInfoEndpoint" for "/connect/userinfo" (f7642de5)
+2021-04-07T14:52:15.0785821+02:00 8000063e-0000-e500-b63f-84710c7967bb [INF] Profile service returned the following claim types: "sub preferred_username name" (b824551e)
+2021-04-07T14:52:15.0961375+02:00 80000640-0000-e500-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)
+2021-04-07T14:52:19.7871897+02:00 800005d5-0005-fc00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:19.7958474+02:00 80000568-0004-f900-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:19.8009109+02:00 800003f0-0002-f600-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:19.8034714+02:00 8000043a-0002-fc00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:19.8563770+02:00 8000086f-0005-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration" (f7642de5)
+2021-04-07T14:52:19.8739365+02:00 80000474-0007-fc00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)
+2021-04-07T14:52:19.8925481+02:00 8000082a-0007-fb00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)
+2021-04-07T14:52:19.9169407+02:00 80000366-0000-e800-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)
+2021-04-07T14:52:19.9198902+02:00 80000871-0005-fe00-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)
+2021-04-07T14:52:19.9220844+02:00 80000288-0000-e400-b63f-84710c7967bb [INF] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession" (f7642de5)

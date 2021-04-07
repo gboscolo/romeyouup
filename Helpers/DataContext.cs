@@ -1,13 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using romeyouup.Entities;
+﻿using IdentityServer4.EntityFramework.Options;
+using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using romeyouup.Entities;
 
 namespace romeyouup.Helpers
 {
-    public class DataContext : DbContext
+    public class DataContext : ApiAuthorizationDbContext<User>
     {
-        public DbSet<User> Users { get; set; }
-
-        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+        public DataContext(
+            DbContextOptions options,
+            IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
+        {
+        }
     }
 }

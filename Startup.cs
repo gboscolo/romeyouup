@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -45,6 +46,19 @@ namespace romeyouup
             services.Add(new ServiceDescriptor(typeof(ContributorContext), new ContributorContext(Configuration.GetConnectionString("DefaultConnection")))); 
             services.AddMvc();
 
+
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<DataContext>();
+
+            services.AddIdentityServer()
+                .AddApiAuthorization<User, DataContext>();
+
+
+
+            services.AddControllersWithViews();
+            services.AddRazorPages();
+
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -62,6 +76,7 @@ namespace romeyouup
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
+             .AddIdentityServerJwt()
             .AddJwtBearer(x =>
             {
                 x.RequireHttpsMetadata = false;
@@ -107,6 +122,7 @@ namespace romeyouup
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseIdentityServer();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -114,6 +130,7 @@ namespace romeyouup
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
 
             app.UseSpa(spa =>
