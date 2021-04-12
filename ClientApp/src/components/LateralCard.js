@@ -3,9 +3,11 @@ import "./css/LateralCard.css";
 import FiltersTab from './FiltersTab';
 import CardsCarousel from './CardsCarousel';
 import ToursCarousel from './ToursCarousel';
+import Footer from './Footer';
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
-
+import { LoginMenu } from './api-authorization/LoginMenu';
+import { LoggedUserMenu } from './api-authorization/LoggedUserMenu';
 export class LateralCard extends React.Component {
     constructor(props) {
         super(props);
@@ -20,6 +22,7 @@ export class LateralCard extends React.Component {
 
         return (
             <div className="lateral-card col-lg-4 col-sm-12">
+                <LoggedUserMenu/>
                 <div className="d-none d-lg-block d-xl-block">                    
                     <h2>{i18next.t("DiscoverWhatWeHaveForYou")}</h2>
                 </div>
@@ -27,6 +30,7 @@ export class LateralCard extends React.Component {
                 <ToursCarousel filter={this.state.currentToursFilter} />
                 <h2>{i18next.t("ReadOneOfOurPost")}</h2>
                 <CardsCarousel filter={0} />
+                <Footer/>
             </div>
         );
     }

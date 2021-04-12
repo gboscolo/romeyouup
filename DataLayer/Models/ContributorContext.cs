@@ -44,7 +44,7 @@ namespace romeyouup.DataLayer.Models
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM TOURS", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM CONTRIBUTORS", conn);
 
                 using (var reader = cmd.ExecuteReader())
                 {

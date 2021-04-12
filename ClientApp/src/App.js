@@ -4,6 +4,13 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Post } from './components/Post';
 import { Tour } from './components/Tour';
+import NewOrEditTour from './components/administration/NewOrEditTour';
+import NewOrEditPost from './components/administration/NewOrEditPost';
+
+import ManageTours from './components/administration/ManageTours';
+
+import ManagePosts from './components/administration/ManagePosts';
+
 import { ToursList } from './components/ToursList';
 import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
@@ -13,9 +20,6 @@ import { OurProposals } from './components/OurProposals';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
-
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
 
 
 import './custom.css'
@@ -33,7 +37,11 @@ export default class App extends Component {
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
             <Route path='/ourproposals' component={ToursList} />
-            <AuthorizeRoute path='/Administration' component={Administration} />
+            <AuthorizeRoute exact path='/Administration' component={Administration} />
+            <AuthorizeRoute path='/Administration/ManagePosts' component={ManagePosts} />
+            <AuthorizeRoute path='/Administration/ManageTours' component={ManageTours} />
+            <AuthorizeRoute path='/Administration/NewOrEditPost/:id' component={NewOrEditPost} />
+            <AuthorizeRoute path='/Administration/NewOrEditTour/:id' component={NewOrEditTour} />
             <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
       </Layout>
     );

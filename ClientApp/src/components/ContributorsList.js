@@ -3,7 +3,7 @@ import i18next from 'i18next';
 import Contributor from './Contributor';
 
 
-export default class ContributorsList extends React.Component {
+export default class ContributorsSelect extends React.Component {
     constructor(props) {
         super(props);
         this.state = { id: this.props.id, contributors: null};
@@ -18,7 +18,7 @@ export default class ContributorsList extends React.Component {
         return (
             <div>
                 {this.state.contributors.map(item =>
-                    <Contributor contributor={item}/>
+                    <Contributor contributor={item} />
                 )}
             </div>
         );

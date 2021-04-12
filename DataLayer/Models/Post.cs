@@ -14,5 +14,6 @@ namespace romeyouup.DataLayer.Models
 		public DateTime Date { get; set; }
 		public List<string> Images { get; set; }
 		public int Type { get; set; }
+		public List<string> RawImages { get; set; }
 	}
 }

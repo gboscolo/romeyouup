@@ -1,0 +1,19 @@
+﻿.login-menu {
+	padding-top: 0;
+	height: 60px;
+}
+
+.login-menu .link {
+	display: inline-block;
+}
+
+.login-menu .button-link {
+	height: 30px;
+	width:30px;
+	display: inline-block;
+}
+.login-menu .button-link.administration {
+	background-image: url(../../assets/icons/admin.svg);
+	background-size: 30px;
+	background-repeat:  no-repeat;
+}

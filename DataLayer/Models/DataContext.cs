@@ -53,7 +53,7 @@ namespace romeyouup.DataLayer.Models
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM POSTS", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM POSTS ORDER BY POST_ID DESC", conn);
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -73,6 +73,66 @@ namespace romeyouup.DataLayer.Models
                 }
 
                 return list;
+            }
+        }
+
+        public long InsertImage(string content)
+        {            
+            string commandText = "INSERT INTO IMAGES (CONTENT) VALUES (@CONTENT)";
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(commandText, conn);
+                cmd.Parameters.Add("@CONTENT", MySqlDbType.LongText);
+                cmd.Parameters["@CONTENT"].Value = content;
+                cmd.ExecuteNonQuery();
+                return cmd.LastInsertedId;
+            }
+        }
+
+        public long UpdatePost(Post post)
+        {
+            string commandText = "UPDATE SET AUTHOR = @AUTHOR, TITLE = @TITLE, CONTENT = @CONTENT, TYPE = @TYPE WHERE POST_ID = @ID";
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(commandText, conn);
+                cmd.Parameters.Add("@AUHTOR", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@TITLE", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@CONTENT", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@TYPE", MySqlDbType.Int32);
+                cmd.Parameters.Add("@ID", MySqlDbType.Int32);
+                cmd.Parameters["@AUTHOR"].Value = post.Author;
+                cmd.Parameters["@TITLE"].Value = post.Title;
+                cmd.Parameters["@CONTENT"].Value = post.Content;
+                cmd.Parameters["@TYPE"].Value = post.Type;
+                cmd.Parameters["@ID"].Value = post.Id;
+                cmd.ExecuteNonQuery();
+                return cmd.LastInsertedId;
+            }
+        }
+
+        public long InsertPost(Post post)
+        {
+            string commandText = "INSERT INTO POSTS (AUTHOR, TITLE, CONTENT, TYPE, IMAGES, DATE) VALUES (@AUTHOR, @TITLE, @CONTENT, @TYPE, @IMAGES, @DATE)";
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(commandText, conn);
+                cmd.Parameters.Add("@AUTHOR", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@TITLE", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@CONTENT", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@TYPE", MySqlDbType.Int32);
+                cmd.Parameters.Add("@IMAGES", MySqlDbType.MediumText);
+                cmd.Parameters.Add("@DATE", MySqlDbType.DateTime);
+                cmd.Parameters["@AUTHOR"].Value = post.Author;
+                cmd.Parameters["@TITLE"].Value = post.Title;
+                cmd.Parameters["@CONTENT"].Value = post.Content;
+                cmd.Parameters["@TYPE"].Value = post.Type;
+                cmd.Parameters["@IMAGES"].Value = string.Join("|", post.Images);
+                cmd.Parameters["@DATE"].Value = post.Date;
+                cmd.ExecuteNonQuery();
+                return cmd.LastInsertedId;
             }
         }
 

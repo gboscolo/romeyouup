@@ -4,6 +4,19 @@
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
 
+<style>
+	/*nav {
+		box-shadow: none !important;
+		border-bottom: none !important;
+	}
+	footer , section{
+		display: none;
+	}
+	body {
+		background-image: url(/ClientApp/public/background.jpg)
+	}*/
+</style>
+
 @{
 	string returnUrl = null;
 	var query = ViewContext.HttpContext.Request.Query;
@@ -13,7 +26,7 @@
 	}
 }
 
-<ul class="navbar-nav">
+<ul class="brand-header">
 	@if (SignInManager.IsSignedIn(User))
 	{
 		<li class="nav-item">
@@ -27,11 +40,11 @@
 	}
 	else
 	{
-		<li class="nav-item">
-			<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register" asp-route-returnUrl="@returnUrl">Register</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@returnUrl">Login</a>
-		</li>
+		@*<li class="nav-item">
+				<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register" asp-route-returnUrl="@returnUrl">Register</a>
+			</li>
+			<li class="nav-item">*@
+		<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@returnUrl">Login</a>
+		@*</li>*@
 	}
 </ul>

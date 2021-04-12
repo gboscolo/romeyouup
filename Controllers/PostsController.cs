@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
@@ -18,6 +19,41 @@ namespace romeyouup.Controllers
 		public PostsController(ILogger<PostsController> logger)
 		{
 			_logger = logger;
+		}
+
+		[HttpPost]
+		public long InsertOrUpdate([FromBody] Post post)
+		{
+			PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
+			List<string> insertedImages = new List<string>();
+			if (post.RawImages != null && post.RawImages.Count > 0)
+			{
+				post.RawImages.ForEach(img => { 					
+					insertedImages.Add(context.InsertImage(img) + string.Empty); 
+				});
+
+				post.RawImages = null;
+				post.Images = insertedImages;
+			}
+
+			long postId = -1;
+			try
+			{
+				if (post.Id > 0)
+				{
+					postId = context.UpdatePost(post);
+				}
+				else
+				{
+					postId = context.InsertPost(post);
+				}
+			}
+			catch (Exception ex)
+			{
+				this._logger.LogError("Error in Posts/INsertOrUpdate " + ex.Message, ex.Message);
+			}			
+
+			return postId;
 		}
 
 		[HttpGet]

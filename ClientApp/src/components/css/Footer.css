@@ -1,4 +1,27 @@
 ﻿footer {
 	height: 50px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
+
+.social-buttons {
+	float:right;
+}
+
+.social-button {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	margin: 0 0 0 30px;
+}
+
+.social-button.facebook {
+	background-image: url(../../assets/icons/facebook.svg);
+}
+	.social-button.instagram {
+		background-image: url(../../assets/icons/instagram.svg);
+	}
+	.social-button.mail {
+		background-image: url(../../assets/icons/mail.svg);
+	}
