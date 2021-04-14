@@ -15,6 +15,19 @@ namespace romeyouup.DataLayer.Models
             this.ConnectionString = connectionString;
         }
 
+        public void DeletePost(long id)
+        {
+            string commandText = "DELETE FROM POSTS WHERE POST_ID = @POST_ID ";
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(commandText, conn);
+                cmd.Parameters.Add("@POST_ID", MySqlDbType.Int64);
+                cmd.Parameters["@POST_ID"].Value = id;
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         public Post GetPost(long id)
         {
             Post post = new Post();
@@ -92,12 +105,12 @@ namespace romeyouup.DataLayer.Models
 
         public long UpdatePost(Post post)
         {
-            string commandText = "UPDATE SET AUTHOR = @AUTHOR, TITLE = @TITLE, CONTENT = @CONTENT, TYPE = @TYPE WHERE POST_ID = @ID";
+            string commandText = "UPDATE POSTS SET AUTHOR = @AUTHOR, TITLE = @TITLE, CONTENT = @CONTENT, TYPE = @TYPE WHERE POST_ID = @ID";
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand(commandText, conn);
-                cmd.Parameters.Add("@AUHTOR", MySqlDbType.VarChar);
+                cmd.Parameters.Add("@AUTHOR", MySqlDbType.VarChar);
                 cmd.Parameters.Add("@TITLE", MySqlDbType.VarChar);
                 cmd.Parameters.Add("@CONTENT", MySqlDbType.VarChar);
                 cmd.Parameters.Add("@TYPE", MySqlDbType.Int32);

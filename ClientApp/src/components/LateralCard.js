@@ -17,7 +17,7 @@ export class LateralCard extends React.Component {
     render() {
         let categories = [{ id: 0, label: i18next.t("All") }, { id: 1, label: i18next.t("Experiences") }, { id: 2, label: i18next.t("Walkingtours") }, { id: 3, label: i18next.t("Museums") }];
         let onFilterChange = (value) => {
-            this.setState({ currentCardsFilter: value });
+            this.setState({ currentToursFilter: value });
         };
 
         return (

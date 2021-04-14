@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MySql.Data.MySqlClient;
 using romeyouup.DataLayer.Models;
 
 namespace romeyouup.Controllers
@@ -19,6 +15,22 @@ namespace romeyouup.Controllers
 		public PostsController(ILogger<PostsController> logger)
 		{
 			_logger = logger;
+		}
+
+		[HttpDelete("{id}")]
+		public IActionResult DeletePost([FromRoute] long id)
+		{
+			try
+			{
+				PostContext context = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
+				context.DeletePost(id);
+				return NoContent();
+			}
+			catch (Exception ex)
+			{
+				this._logger.LogError("Error in Posts/DeletePost " + ex.Message + ex.StackTrace, ex.Message + ex.StackTrace);
+				return NoContent();
+			}
 		}
 
 		[HttpPost]

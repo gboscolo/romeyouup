@@ -1,5 +1,6 @@
 ﻿.tours-list .tour-item {
 	width:360px;
+	display: inline-block;
 }
 
 .tours-filter {

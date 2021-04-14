@@ -51,5 +51,41 @@ namespace romeyouup.Controllers
 				return null;
 			}
 		}
+
+		[HttpPost]
+		public long InsertOrUpdate([FromBody] Tour tour)
+		{
+			TourContext context = HttpContext.RequestServices.GetService(typeof(TourContext)) as TourContext;
+			PostContext postcontext = HttpContext.RequestServices.GetService(typeof(PostContext)) as PostContext;
+			List<string> insertedImages = new List<string>();
+			if (tour.RawImages != null && tour.RawImages.Count > 0)
+			{
+				tour.RawImages.ForEach(img => {
+					insertedImages.Add(postcontext.InsertImage(img) + string.Empty);
+				});
+
+				tour.RawImages = null;
+				tour.Images = insertedImages;
+			}
+
+			long tourId = -1;
+			try
+			{
+				if (tour.Id > 0)
+				{
+					tourId = context.UpdateTour(tour);
+				}
+				else
+				{
+					tourId = context.InsertTour(tour);
+				}
+			}
+			catch (Exception ex)
+			{
+				this._logger.LogError("Error in Tours/INsertOrUpdate " + ex.Message, ex.Message);
+			}
+
+			return tourId;
+		}
 	}
 }

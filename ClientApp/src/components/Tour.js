@@ -3,6 +3,7 @@ import BrandHeader from './BrandHeader';
 import Footer from './Footer';
 import { ToursCarousel } from './ToursCarousel';
 import { ContactForm } from './ContactForm';
+import { ImagesGallery } from './ImagesGallery';
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -88,12 +89,7 @@ export class Tour extends React.Component {
         }
 
         return (
-          
-                <div>
-                <img className="tour-picture" src={"/Images/" + tour.images[0]} />
-                    <p className="legend"></p>
-                </div>
-
+            <ImagesGallery images={tour.images} />
         );
     }
 

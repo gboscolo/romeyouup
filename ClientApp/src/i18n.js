@@ -48,7 +48,17 @@ i18n.use(LanguageDetector).init({
                 NotValidEmail: "The email address is not valid",
                 ErrorWhileMailing: "An error occured while sending the email, please retry later!",
                 SuccessWhileMailing: "We have received your message, please check for our response your inbox or your spam folder!",
-                TourRequestInfo: "Book this experience or ask us more informations!"
+                TourRequestInfo: "Book this experience or ask us more informations!",
+                InsertPost: "Insert post",
+                EditPost: "Edit post",
+                Author: "Author",
+                Title: "Title",
+                PostTitle: "Post title",
+                Content: "Content",
+                PostContent: "Contenuto del post",
+                Images: "Images",
+                EditTour: "Edit tour",
+                NewTour: "New tour"
             }
         },
         it: {
@@ -95,7 +105,17 @@ i18n.use(LanguageDetector).init({
                 NotValidEmail: "La mail non è valida",
                 ErrorWhileMailing: "É avvenuto un errore durante l'invio del messaggio, riprova più tardi!",
                 SuccessWhileMailing: "Abbiamo ricevuto il tuo messaggio! Controlla nella tua email se hai ricevuto la risposta, eventualmente controlla nella cartella di posta indesiderata!",
-                TourRequestInfo: "Prenota questa esperienza o chiedici maggiori informazioni!"
+                TourRequestInfo: "Prenota questa esperienza o chiedici maggiori informazioni!",
+                InsertPost: "Nuovo post",
+                EditPost: "Modifica post",
+                Author: "Autore",
+                Title: "Titolo",
+                PostTitle: "Titolo del post",
+                Content: "Contenuto",
+                PostContent: "Contenuto del post",
+                Images: "Immagini",
+                EditTour: "Modifica tour",
+                NewTour: "Nuovo tour"
             }
         },
         es: {

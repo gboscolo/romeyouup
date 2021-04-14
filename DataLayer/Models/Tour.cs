@@ -7,8 +7,8 @@ namespace romeyouup.DataLayer.Models
 		public int Id { get; set; }
 		public string Title { get; set; }
 		public string Caption { get; set; }
-		public long Duration { get; set; }
-		public int Cost { get; set; }
+		public string Duration { get; set; }
+		public string Cost { get; set; }
 		public string Summary { get; set; }
 		public string Description { get; set; }
 		public string AdditionalInfo { get; set; }
@@ -16,5 +16,6 @@ namespace romeyouup.DataLayer.Models
 		public int Type { get; set; }
 		public List<string> Images { get; set; }
 		public int Modality { get; set; }
+		public List<string> RawImages { get; set; }
 	}
 }

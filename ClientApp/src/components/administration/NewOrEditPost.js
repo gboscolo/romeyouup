@@ -8,6 +8,7 @@ import ContributorsSelect from '../ContributorsSelect';
 import DateSelect from '../DateSelect';
 import ImageSelectPreview from 'react-image-select-pv';
 import { withTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 
 export class NewOrEditPost extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ export class NewOrEditPost extends React.Component {
         fetch('posts',
             {
                 method: "POST",
-                body: JSON.stringify({ id: this.state.id > 0 ? this.state.id : 0 , title: this.state.title, content: this.state.content, author: this.state.author, date: new Date(), rawImages: this.state.rawImages, type: 1 }),
+                body: JSON.stringify({ id: this.state.id > 0 ? this.state.id : 0 , title: this.state.title, content: this.state.content, author: this.state.author, date: this.state.id > 0 ? this.state.date : new Date(), rawImages: this.state.rawImages, type: 1, images: this.state.images }),
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
@@ -57,41 +58,38 @@ export class NewOrEditPost extends React.Component {
             this.loadPost();
             return (<div>{i18next.t("Loading")}...</div>);
         }
-        else {
-            this.state.post = {};
-        }
 
         return (<div className="main-container align-center">
             <BrandHeader dark={true} />
             <Container>
-                <h3>{this.state.id > -1 ? "Modifica post" : "Nuovo post"}  </h3>
+                <h3>{i18next.t(this.state.id > -1 ? "EditPost" : "NewPost")}</h3>
                 <Row>
-                    <Col xs="12" md="3">Autore</Col>
+                    <Col xs="12" md="3">{i18next.t("Author")}</Col>
                     <Col xs="12" md="9"><ContributorsSelect
                         onChange={(e) => { this.handleChange("author", e) }}
-                        selected={this.state.post.author}
+                        selected={this.state.author}
                         setValues={(initialValue) => { this.state.author = initialValue; }}
                     ></ContributorsSelect></Col>
                 </Row>
                 <Row>
-                    <Col xs="12" md="3">Titolo</Col>
+                    <Col xs="12" md="3">{i18next.t("Title")}</Col>
                     <Col xs="12" md="9"><Input
-                        onChange={this.handleChange.bind(this, 'title')} 
-                        placeholder="Titolo del post"
-                        value={this.state.post.title}></Input></Col>
+                        onChange={this.handleChange.bind(this, 'title')}
+                        placeholder={i18next.t("PostTitle")}
+                        value={this.state.title}></Input></Col>
                 </Row>
                 <Row>
-                    <Col xs="12" md="3">Contenuto</Col>
+                    <Col xs="12" md="3">{i18next.t("Content")}</Col>
                     <Col xs="12" md="9"><textarea
-                        onChange={this.handleChange.bind(this, 'content')}                         
-                        rows="5" className="form-control" placeholder="Contenuto del post" value={this.state.post.content}></textarea></Col>
+                        onChange={this.handleChange.bind(this, 'content')}
+                        rows="5" className="form-control" placeholder={i18next.t("PostContent")} value={this.state.content}></textarea></Col>
                 </Row>
                
                 <Row>
-                    <Col xs="12" md="3">Immagini</Col>
+                    <Col xs="12" md="3">{i18next.t("Images")}</Col>
                     <Col xs="12" md="9">
                         <ImageSelectPreview
-                            maxImageSize={4000}
+                            maxImageSize={4*1024*1024}
                             max={4}
                             imageTypes="jpg"
                             onChange={data => this.handleChange('images', data)} />
@@ -109,7 +107,8 @@ export class NewOrEditPost extends React.Component {
         const response = await fetch('posts/' + this.state.id);
         const data = await response.json();
         data.loaded = true;
-        this.setState({ post: data });
+        data.isvalid = true;
+        this.setState(data);
     }
 }
 
