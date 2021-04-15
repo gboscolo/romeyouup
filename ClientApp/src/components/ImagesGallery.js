@@ -1,8 +1,7 @@
 ﻿import React from 'react';
-import ImageGallery from 'react-image-gallery';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 import { withTranslation } from 'react-i18next';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
 
 export class ImagesGallery extends React.Component {
     constructor(props) {
@@ -10,11 +9,25 @@ export class ImagesGallery extends React.Component {
         this.state = { images: props.images }
     }
     render() {
-        let media = this.state.images.map(i => {
-            return { source: "/Images/" + i }
-        });
+        return (
+            <Carousel
+                autoPlay={true}
+                dynamicHeight={true}
+                emulateTouch={true}
+                swipeable={true}
+                infiniteLoop={true}
+                showIndicators={false}
+            >
+                {
+                    this.state.images.map(i => 
+                        <div>
+                            <img src={"/Images/" + i} />
+                        </div>
+                    )
+                }
+            </Carousel>
 
-        return (<AwesomeSlider media={media} />);
+            );
     }
 }
 

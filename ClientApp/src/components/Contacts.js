@@ -21,6 +21,7 @@ export class Contacts extends React.Component {
                 <div className='image-background'>
                     <Container className="contacts-form">
                         <h3>{i18next.t("ContactUsMessage")}</h3>
+                        <p><em>{i18next.t("ContactsHint")}</em></p>
                         <ContactForm textareaMessage={i18next.t("YourMessage")} />
                     </Container>
                 </div>                

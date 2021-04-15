@@ -40,7 +40,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\public\favicon.ico" />
     <None Remove="Logs\myapp-20210325.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\public\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

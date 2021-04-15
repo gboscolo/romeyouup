@@ -17,6 +17,13 @@ export class Tour extends React.Component {
         this.state = { id: this.props.match.params.id, tour: null };
     }
 
+    getWillSee() {
+        if (!this.state.tour.willSee) { return (<div />) }
+        else {
+            return (<div><div className="highlight-title">{i18next.t("WhatWeWillSee")}:</div> <div className="description">{this.state.tour.willSee}</div></div>);
+        }
+    }
+
     render() {
         if (this.state.tour == null) {
             this.loadTour();
@@ -32,15 +39,16 @@ export class Tour extends React.Component {
                     <div className="row">
                     <div className="col-xl-6 col-md-12">
                         <h1 className="title">{this.state.tour.title}</h1>
-                        <h4 className="subtitle">"{this.state.tour.caption}"</h4>
+                            <h4 className="subtitle">"{this.state.tour.caption}"</h4>
+                            <AnchorLink href='#book' id="anchor-book">Prenota!</AnchorLink>
                         {imageCarousel}
                             <div className="highlight-section">
                                 <div><span className="highlight-title">{i18next.t("Duration")}:</span>{this.state.tour.duration} {i18next.t("Hours")}</div>
                                 <div><span className="highlight-title">{i18next.t("Modality")}:</span> {Tour.GetModalityString(this.state.tour.modality)}</div>
-                                <div><span className="highlight-title">{i18next.t("Cost")}:</span> {this.state.tour.cost}€ {i18next.t("ForPerson")}</div>
+                                <div><span className="highlight-title">{i18next.t("Cost")}:</span> {this.state.tour.cost}€{i18next.t("ForPerson")}*</div>
+                                <div><small>*{i18next.t("CostGroupHint")}</small></div>
                             </div>
-                            <AnchorLink href='#book' id="anchor-book">Prenota!</AnchorLink>
-                            <div><div className="highlight-title">{i18next.t("WhatWeWillSee")}:</div> <div className="description">{this.state.tour.willSee}</div></div>
+                            {this.getWillSee()}
                     </div>
                     <div className="col-xl-6 col-md-12">
                             <div className="highlight-title">{i18next.t("Shortly")}</div>

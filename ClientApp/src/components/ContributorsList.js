@@ -1,6 +1,7 @@
 ﻿import * as React from 'react';
 import i18next from 'i18next';
 import Contributor from './Contributor';
+import { Link } from 'react-router-dom';
 
 
 export default class ContributorsSelect extends React.Component {
@@ -18,7 +19,9 @@ export default class ContributorsSelect extends React.Component {
         return (
             <div>
                 {this.state.contributors.map(item =>
-                    <Contributor contributor={item} />
+                    <Link to={"contributordetail/" + item.id}>
+                        <Contributor key={item.id} contributor={item} />
+                    </Link>
                 )}
             </div>
         );

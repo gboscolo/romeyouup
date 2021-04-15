@@ -16,7 +16,7 @@ import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
 import { Contacts } from './components/Contacts';
 import { OurProposals } from './components/OurProposals';
-
+import { ContributorDetail } from './components/ContributorDetail';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
@@ -37,6 +37,7 @@ export default class App extends Component {
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
             <Route path='/ourproposals' component={ToursList} />
+            <Route path='/contributordetail/:id' component={ContributorDetail} />
             <AuthorizeRoute exact path='/Administration' component={Administration} />
             <AuthorizeRoute path='/Administration/ManagePosts' component={ManagePosts} />
             <AuthorizeRoute path='/Administration/ManageTours' component={ManageTours} />

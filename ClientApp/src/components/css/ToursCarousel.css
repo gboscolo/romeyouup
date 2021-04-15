@@ -12,7 +12,7 @@
 	color: white;
 	position: relative;
 	cursor: pointer;
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }

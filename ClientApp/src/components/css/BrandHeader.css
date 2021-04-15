@@ -43,6 +43,10 @@
 	border-color: #707070 !important;
 }
 
+.header-logo {
+	height: 48px;
+}
+
 @media (max-width: 768px) {
 	.brand-header {
 		text-align: center;

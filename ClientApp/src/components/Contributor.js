@@ -3,7 +3,7 @@ import i18next from 'i18next';
 import './css/Contributor.css';
 import { withTranslation } from 'react-i18next';
 
-export default class Contributor extends React.Component {
+export default class ContributorDetail extends React.Component {
     constructor(props) {
         super(props);
         this.state = { id: this.props.id, contributor: this.props.contributor, mode: this.props.mode};

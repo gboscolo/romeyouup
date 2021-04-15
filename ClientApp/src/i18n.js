@@ -58,7 +58,14 @@ i18n.use(LanguageDetector).init({
                 PostContent: "Contenuto del post",
                 Images: "Images",
                 EditTour: "Edit tour",
-                NewTour: "New tour"
+                NewTour: "New tour",
+                Accept: "Accept",
+                CookieConsentText: "This site uses technical cookies for the optimum use of the site. By closing this banner, scrolling through this page or by clicking on any of its elements you allow for the use of cookies",
+                WhoWeAre1: "",
+                WhoWeAre2: "",
+                WhoWeAre3: "",
+                WhoWeAre4: "",
+                OurContributors: "Our contributors"
             }
         },
         it: {
@@ -115,7 +122,16 @@ i18n.use(LanguageDetector).init({
                 PostContent: "Contenuto del post",
                 Images: "Immagini",
                 EditTour: "Modifica tour",
-                NewTour: "Nuovo tour"
+                NewTour: "Nuovo tour",
+                Accept: "Accetta",
+                CookieConsentText: "Questo sito utilizza cookie tecnici per consentire la fruizione ottimale del sito. Chiudendo questo banner, scorrendo questa pagina o cliccando su qualunque suo elemento consenti all'uso dei cookie",
+                WhoWeAre1: "Romeyouup nasce con l’obiettivo di condurti a spasso per Roma attraverso esperienze di visita originali e personalizzate.",
+                WhoWeAre2: "Romeyouup nasce nelle menti e nei cuori di un gruppo di amici che vuole far conoscere la città in cui vive, Roma, condividendo percorsi affascinanti e inediti. Chi qui ci è cresciuto, chi ci è arrivato da lontano, chi ha scelto di viverci, Roma è la loro casa e il turismo il loro ambito di lavoro e la loro passione.",
+                WhoWeAre3: "Romeyouup nasce per offrire esperienze su misura per te: se non vuoi perderti la visita alle icone della città ma senza stress; se sei un tipo che va con la mappa sotto braccio alla scoperta di luoghi inediti; se sei un appassionato di bike, street art, food tasting o altro… ",
+                WhoWeAre4: "In visita per un giorno o in viaggio da una vita, se sei a Roma non esitare a chiamarci: la Città Eterna ti sta aspettando!",
+                OurContributors: "I nostri contributori",
+                CostGroupHint: "La quota è riferita alla partecipazione in gruppi. Per gruppi più piccoli chiedici informazioni!",
+                ContactsHint: "romeyouup nasce con lo scopo di offrirti un'esperienza completamente nuova con la città! Se avessi un'idea o volessi suggerirci una nuova esperienza, non esitare a scrivercelo!"
             }
         },
         es: {

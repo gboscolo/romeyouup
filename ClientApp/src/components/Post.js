@@ -4,6 +4,7 @@ import Footer from './Footer';
 import CardsCarousel from './CardsCarousel';
 import Contributor from './Contributor';
 import i18next from 'i18next';
+import { ImagesGallery } from './ImagesGallery';
 import { withTranslation } from 'react-i18next';
 import './css/Post.css';
 
@@ -46,12 +47,7 @@ export class Post extends React.Component {
         }
 
         return (
-          
-                <div>
-                <img className="post-picture" src={"/Images/" + post.images[0]} />
-                    <p className="legend"></p>
-                </div>
-
+            <ImagesGallery images={post.images} />
         );
     }
 

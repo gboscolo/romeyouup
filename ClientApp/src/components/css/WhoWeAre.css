@@ -1,12 +1,12 @@
-﻿.contacts-form {
+﻿.container {
 	margin-top: 30px;
 	padding: 20px 30px 20px 30px;
 	background-color: white;
 	border-radius: 20px;
 }
 
-.image-background {
-	background-image: url(../../assets/images/background.jpg);
+.whoweare-background {
+	background-image: url(../../assets/images/background2.jpg);
 	background-size: 100% auto;
 	position: absolute;
 	top: 90px;
@@ -15,7 +15,7 @@
 	bottom: 0;
 }
 @media (max-width: 768px) {
-	.image-background {
+	.whoweare-background {
 		top: 160px;
 	}
 }

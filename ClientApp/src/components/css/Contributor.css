@@ -9,14 +9,29 @@
 
 .contributor {
 	position: relative;
+	cursor: pointer;
 }
 
-.contributor-name {
-	position: absolute;
-	width: 300px;
-	left: 60px;
-	top: 10px;
-}
+	.contributor * {
+		transition: all 0.3s linear;
+	}
+
+	.contributor:hover .contributor-photo {
+		/*	border: 3px solid orangered;*/
+		background-size: 80px;
+		background-position: -15px;
+	}
+
+	.contributor:hover .contributor-name {
+		font-weight: 500;
+	}
+
+	.contributor-name {
+		position: absolute;
+		width: 300px;
+		left: 60px;
+		top: 10px;
+	}
 
 .contributor.light .contributor-name {
 	display: none;
@@ -24,4 +39,28 @@
 
 .contributor.light .contributor-photo {
 	border: 2px solid white;
+}
+
+.contributor-photo.photo-big {
+	width:300px;
+	height: 300px;
+	background-size:300px;
+	border-radius: 150px;
+}
+
+.contributor-background {
+	text-align: center;
+	background-image: url(../../assets/images/background2.jpg);
+	background-size: 100% auto;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@media (max-width: 768px) {
+	.contributor-background {
+		top: 160px;
+	}
 }
