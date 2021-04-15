@@ -4,8 +4,20 @@
 }
 
 .social-buttons {
-	float:right;
+	text-align: center;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	margin-right: 10px;
 }
+
+	.social-buttons h5 {
+		text-transform: uppercase;
+		font-family: Leelawadee;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: white;
+	}
 
 .social-button {
 	width: 40px;
@@ -13,7 +25,7 @@
 	display: inline-block;
 	background-size: 40px;
 	background-repeat: no-repeat;
-	margin: 0 0 0 30px;
+	margin: 0 15px 0 15px;
 }
 
 .social-button.facebook {

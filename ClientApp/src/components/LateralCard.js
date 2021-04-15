@@ -23,7 +23,7 @@ export class LateralCard extends React.Component {
         return (
             <div className="lateral-card col-lg-4 col-sm-12">
                 <LoggedUserMenu/>
-                <div className="d-none d-lg-block d-xl-block">                    
+                <div className="d-lg-block d-xl-block">                    
                     <h2>{i18next.t("DiscoverWhatWeHaveForYou")}</h2>
                 </div>
                 <FiltersTab items={categories} selectedItem={0} onChange={onFilterChange} />

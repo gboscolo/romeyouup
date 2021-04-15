@@ -9,7 +9,8 @@ import i18n from "./i18n";
 //https://www.npmjs.com/package/react-cookie-consent
 import CookieConsent from "react-cookie-consent";
 import i18next from 'i18next';
-import { withTranslation } from 'react-i18next';
+import { HamburgerMenu } from './components/HamburgerMenu';
+
 
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
 const rootElement = document.getElementById('root');
@@ -27,6 +28,7 @@ ReactDOM.render(
             >
                 {i18next.t("CookieConsentText")}.{" "}
             </CookieConsent>
+            <HamburgerMenu/>
             <App />
         </BrowserRouter>
     </I18nextProvider>,

@@ -13,11 +13,16 @@
 	text-align: center;
 }
 
-@media (max-width: 768px) {
+.tours-list-background {
+	background-image: url(../../assets/images/background3.jpg) !important;
+}
+
+@media (max-width: 950px) {
 	.tours-list {
-		margin-top:0 !important;
+		margin-top: 0 !important;
 	}
-	.tours-list .tour-item {
-		width:100%;
-	}
+
+		.tours-list .tour-item {
+			width: 100%;
+		}
 }

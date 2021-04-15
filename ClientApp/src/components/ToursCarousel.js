@@ -57,7 +57,7 @@ export class ToursCarousel extends React.Component {
         }
 
         return (
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive} partialVisible={true}>
                 {tours.map(tour =>
                     <TourSquare key={tour.id} tour={tour}/>
                 )}

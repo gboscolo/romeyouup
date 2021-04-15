@@ -7,15 +7,15 @@
 
 .whoweare-background {
 	background-image: url(../../assets/images/background2.jpg);
-	background-size: 100% auto;
+	background-size: cover;
 	position: absolute;
 	top: 90px;
 	left: 0;
 	right: 0;
 	bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 	.whoweare-background {
-		top: 160px;
+		top: 80px;
 	}
 }

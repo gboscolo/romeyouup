@@ -24,6 +24,8 @@ export class Contacts extends React.Component {
                         <p><em>{i18next.t("ContactsHint")}</em></p>
                         <ContactForm textareaMessage={i18next.t("YourMessage")} />
                     </Container>
+
+                    <Footer />
                 </div>                
             </React.Fragment>
         );

@@ -46,14 +46,11 @@ namespace romeyouup
             services.Add(new ServiceDescriptor(typeof(ContributorContext), new ContributorContext(Configuration.GetConnectionString("DefaultConnection")))); 
             services.AddMvc();
 
-
             services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<DataContext>();
 
             services.AddIdentityServer()
                 .AddApiAuthorization<User, DataContext>();
-
-
 
             services.AddControllersWithViews();
             services.AddRazorPages();

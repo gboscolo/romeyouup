@@ -61,11 +61,12 @@ i18n.use(LanguageDetector).init({
                 NewTour: "New tour",
                 Accept: "Accept",
                 CookieConsentText: "This site uses technical cookies for the optimum use of the site. By closing this banner, scrolling through this page or by clicking on any of its elements you allow for the use of cookies",
-                WhoWeAre1: "",
-                WhoWeAre2: "",
-                WhoWeAre3: "",
-                WhoWeAre4: "",
-                OurContributors: "Our contributors"
+                //WhoWeAre1: "",
+                //WhoWeAre2: "",
+                //WhoWeAre3: "",
+                //WhoWeAre4: "",
+                OurContributors: "Our contributors",
+                FollowUsOn: "Follow us on"
             }
         },
         it: {
@@ -131,7 +132,8 @@ i18n.use(LanguageDetector).init({
                 WhoWeAre4: "In visita per un giorno o in viaggio da una vita, se sei a Roma non esitare a chiamarci: la Città Eterna ti sta aspettando!",
                 OurContributors: "I nostri contributori",
                 CostGroupHint: "La quota è riferita alla partecipazione in gruppi. Per gruppi più piccoli chiedici informazioni!",
-                ContactsHint: "romeyouup nasce con lo scopo di offrirti un'esperienza completamente nuova con la città! Se avessi un'idea o volessi suggerirci una nuova esperienza, non esitare a scrivercelo!"
+                ContactsHint: "romeyouup nasce con lo scopo di offrirti un'esperienza completamente nuova con la città! Se avessi un'idea o volessi suggerirci una nuova esperienza, non esitare a scrivercelo!",
+                FollowUsOn: "Seguici anche su"
             }
         },
         es: {

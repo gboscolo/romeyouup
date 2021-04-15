@@ -27,6 +27,7 @@ export class ToursList extends React.Component {
         return (
             <div className="page-container">
                 <BrandHeader dark={true} />
+                <div className='image-background tours-list-background'>
                 <div className="container tours-list">
                     <h1>{i18next.t("OurProposals")}</h1> 
                     <TextFilter placeholder={i18next.t("ToursFilter")} className={"tours-filter"} onFilter={({ target: { value: filter } }) => this.setState(state => ({ tours: state.tours, filter: filter }))} />
@@ -36,7 +37,7 @@ export class ToursList extends React.Component {
                         )
                     }
                 </div>
-                <Footer/>
+                <Footer/></div>
                 </div>
         );
     }

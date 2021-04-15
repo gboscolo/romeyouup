@@ -2,7 +2,9 @@
 import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import BrandHeader from './BrandHeader';
-import  ContributorsList  from './ContributorsList';
+import ContributorsList from './ContributorsList';
+
+import Footer from './Footer';
 import { Container } from 'reactstrap';
 import './css/Tour.css';
 import './css/WhoWeAre.css';
@@ -27,6 +29,7 @@ export class WhoWeAre extends React.Component {
                         <h3>{i18next.t("OurContributors")}</h3>
                         <ContributorsList />
                     </Container>
+                    <Footer />
                 </div>
         </div>);
     }

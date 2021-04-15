@@ -65,7 +65,10 @@ namespace romeyouup.DataLayer.Models
                 Id = Convert.ToInt32(reader["CONTRIBUTOR_ID"]),
                 Name = reader["NAME"].ToString(),
                 Image = reader["IMAGE"].ToString(),
-                Description = reader["DESCRIPTION"].ToString()
+                Description = reader["DESCRIPTION"].ToString(),
+                Instagram = reader["INSTAGRAM"].ToString(),
+                Facebook = reader["FACEBOOK"].ToString(),
+                Youtube = reader["YOUTUBE"].ToString()
             };
         }
 

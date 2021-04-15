@@ -1,6 +1,6 @@
 ﻿.react-multi-carousel-item {
 	transition: all linear 0.2s;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 .tour-item {
@@ -29,16 +29,16 @@
 	bottom:0;
 }
 
-.tour-item > .overlay {
-	width: 100%;
-	background-image: linear-gradient(to top,#333, rgba(255,0,0,0));
-	height: 180px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	border-radius: 0 0 10px 10px;
-}
+	.tour-item > .overlay {
+		width: 100%;
+		background-image: linear-gradient(to top,#333, rgba(255, 255, 255, 0));
+		height: 180px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 0 0 10px 10px;
+	}
 
 	.tour-item .modality {
 		position: absolute;

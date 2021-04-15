@@ -4,7 +4,7 @@ import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import './css/Language.css';
 
-const Language = (props) => {
+const LanguageMenu = (props) => {
     const [popoverOpen, setPopoverOpen] = useState(false);
     const toggle = () => setPopoverOpen(!popoverOpen);
 
@@ -20,7 +20,7 @@ const Language = (props) => {
                 <span className="globe"></span>
                 <span className="language-label">{i18next.language}</span>
             </Button>
-            <Popover placement="bottom" isOpen={popoverOpen} target={popoverId} toggle={toggle} trigger={"click"} innerClassName="language-popover-item">
+            <Popover placement="bottom" isOpen={popoverOpen} container={".bm-menu-wrap"} target={popoverId} toggle={toggle} trigger={"click"} innerClassName="language-popover-item">
                 <PopoverBody>
                     <div className="language-popover-row" onClick={(e) => { changeLanguage("en") }}>{i18next.t("English")}</div>
                     <div className="language-popover-row" onClick={(e) => { changeLanguage("it") }}>{i18next.t("Italian")}</div>
@@ -31,4 +31,4 @@ const Language = (props) => {
     );
 }
 
-export default withTranslation()(Language);
+export default withTranslation()(LanguageMenu);

@@ -24,11 +24,12 @@
 	left: 45%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 	.filter-item {
-		font-size:14px;
-		padding:10px;
+		font-size: 14px;
+		padding: 10px;
 	}
+
 		.filter-item.selected::before {
 			display: none;
 		}

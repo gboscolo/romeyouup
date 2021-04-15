@@ -12,12 +12,12 @@ export default class Footer extends React.Component {
 
     render() {
         return (<footer>
-            <div className="container">
-            <div className={"social-buttons"}>
+                <div className={"social-buttons"}>
+                    <h5>{i18next.t("FollowUsOn")}</h5>
                 <a className="social-button facebook" href={"https://www.facebook.com/romeyouup/"} target="_blank"></a>
                 <a className="social-button instagram" href={"https://www.instagram.com/romeyouup/"} target="_blank"></a>
                 <a className="social-button mail" href={"mailto:info@romeyouup.it"} target="_blank"></a>
-                </div></div>
+                </div>
         </footer>);
     }
 }

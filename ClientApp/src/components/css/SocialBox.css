@@ -1,0 +1,13 @@
+﻿.social-box .social-button.facebook {
+	background-image: url(../../assets/icons/facebook-grey.svg);
+}
+.social-box .social-button.instagram {
+	background-image: url(../../assets/icons/instagram-grey.svg);
+}
+.social-box .social-button.youtube {
+	background-image: url(../../assets/icons/youtube-grey.svg);
+}
+
+.social-box {
+	margin-top: 40px;
+}

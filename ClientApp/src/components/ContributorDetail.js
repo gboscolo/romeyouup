@@ -4,6 +4,7 @@ import './css/Contributor.css';
 import BrandHeader from './BrandHeader';
 import { Container } from 'reactstrap';
 import { withTranslation } from 'react-i18next';
+import SocialBox from './SocialBox';
 
 export class ContributorDetail extends React.Component {
     constructor(props) {
@@ -27,6 +28,10 @@ export class ContributorDetail extends React.Component {
                             <h1>{this.state.contributor.name}</h1>
                             <p className="description">{this.state.contributor.description}</p>
                         </div>
+                        <SocialBox
+                            instagram={this.state.contributor.instagram} 
+                            youtube={this.state.contributor.youtube} 
+                            facebook={this.state.contributor.facebook} />
                     </Container>
                 </div>
             </React.Fragment>
