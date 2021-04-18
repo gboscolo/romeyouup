@@ -20,7 +20,7 @@ export class ImagesGallery extends React.Component {
             >
                 {
                     this.state.images.map(i => 
-                        <div>
+                        <div key={i}>
                             <img src={"/Images/" + i} />
                         </div>
                     )

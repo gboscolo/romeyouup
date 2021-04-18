@@ -17,6 +17,10 @@ export class Tour extends React.Component {
         this.state = { id: this.props.match.params.id, tour: null };
     }
 
+    componentWillReceiveProps(nextprops) {
+        this.setState({ id: nextprops.match.params.id, tour: null });
+    }
+
     getWillSee() {
         if (!this.state.tour.willSee) { return (<div />) }
         else {

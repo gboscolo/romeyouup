@@ -15,6 +15,10 @@ export class Post extends React.Component {
         this.state = { id: this.props.match.params.id, post: null };
     }
 
+    componentWillReceiveProps(nextprops) {
+        this.setState({ id: nextprops.match.params.id, post: null });
+    }
+
     render() {
         if (this.state.post == null) {
             this.loadPost();

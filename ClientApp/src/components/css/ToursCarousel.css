@@ -75,3 +75,27 @@
 	.tour-item .modality.modality-bike {
 		background-image: url(../../assets/icons/bike.svg);
 	}
+
+	.tour-item .type {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: #666666;
+		top: 70px;
+		right: 0;
+		border-radius: 10px 0 0 10px;
+		background-size: 22px;
+		background-repeat: no-repeat;
+		background-position: 8px 8px;
+		padding: 10px;
+	}
+
+	.tour-item .type.type-experience {
+		background-image: url(../../assets/icons/experience.svg);
+	}
+	.tour-item .type.type-walking {
+		background-image: url(../../assets/icons/foot.svg);
+	}
+	.tour-item .type.type-museums {
+		background-image: url(../../assets/icons/museums.svg);
+	}
