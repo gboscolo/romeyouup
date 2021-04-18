@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import './css/CardsCarousel.css';
 import { Link } from "react-router-dom";
 import Contributor from './Contributor';
+import { LoadingAnimation } from './LoadingAnimation';
 
 export default class CardsCarousel extends React.Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class CardsCarousel extends React.Component {
 
     render() {
         let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
+            ? <LoadingAnimation/>
             : CardsCarousel.renderPostsCarousel(this.state.posts, this.state.filter);
         return (
             <div style={{ display: "grid", maxWidth: "100%" }}>

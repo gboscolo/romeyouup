@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { LoadingAnimation } from './LoadingAnimation';
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
@@ -38,8 +39,8 @@ export class FetchData extends Component {
   }
 
   render() {
-    let contents = this.state.loading
-      ? <p><em>Loading...</em></p>
+      let contents = this.state.loading
+          ? <LoadingAnimation/>
       : FetchData.renderForecastsTable(this.state.forecasts);
 
     return (

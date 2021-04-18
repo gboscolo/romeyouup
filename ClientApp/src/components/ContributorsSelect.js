@@ -1,6 +1,7 @@
 ﻿import * as React from 'react';
 import i18next from 'i18next';
 import Contributor from './Contributor';
+import { LoadingAnimation } from './LoadingAnimation';
 
 
 export default class ContributorsList extends React.Component {
@@ -12,7 +13,7 @@ export default class ContributorsList extends React.Component {
     render() {
         if (this.state.contributors == null) {
             this.loadContributors();
-            return (<div>{i18next.t("Loading")}...</div>);
+            return (<LoadingAnimation/>);
         }     
 
         return (

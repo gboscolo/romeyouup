@@ -9,6 +9,7 @@ import { withTranslation } from 'react-i18next';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button } from 'reactstrap';
 import './css/Tour.css';
+import { LoadingAnimation } from './LoadingAnimation';
 
 
 export class Tour extends React.Component {
@@ -31,12 +32,12 @@ export class Tour extends React.Component {
     render() {
         if (this.state.tour == null) {
             this.loadTour();
-            return (<div>{i18next.t("Loading")}...</div>);
-        }       
+            return (<LoadingAnimation/>);
+            }       
 
-        let imageCarousel = Tour.getImagesCarousel(this.state.tour);
+            let imageCarousel = Tour.getImagesCarousel(this.state.tour);
 
-        return (
+            return (
             <div className="page-container">
                 <BrandHeader dark={true} />
                 <div className="container">

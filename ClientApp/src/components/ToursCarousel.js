@@ -7,6 +7,7 @@ import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import './css/ToursCarousel.css';
 import { Link } from "react-router-dom";
+import { LoadingAnimation } from './LoadingAnimation';
 
 export class ToursCarousel extends React.Component {
     constructor(props) {
@@ -24,7 +25,7 @@ export class ToursCarousel extends React.Component {
 
     render() {
         let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
+            ? <LoadingAnimation/>
             : ToursCarousel.renderToursCarousel(this.state.tours, this.state.filter);
         return (
             <div style={{ display: "grid", maxWidth: "100%" }}>

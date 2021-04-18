@@ -4,6 +4,7 @@ import { NavItem, NavLink, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import BrandHeader from '../BrandHeader';
+import { LoadingAnimation } from '../LoadingAnimation';
 
 export default class ManagePosts extends React.Component {
     constructor(props) {
@@ -33,7 +34,7 @@ export default class ManagePosts extends React.Component {
     render() {
         if (this.state.loading) {
             this.loadPosts();
-            return (<div>{i18next.t("Loading")}...</div>);
+            return (<LoadingAnimation />);
         }
 
         return (<div className="main-container align-center">

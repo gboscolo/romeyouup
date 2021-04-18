@@ -6,6 +6,7 @@ import BrandHeader from '../BrandHeader';
 import { withTranslation } from 'react-i18next';
 import ImageSelectPreview from 'react-image-select-pv';
 import { Container, Row, Col, Input, Button } from 'reactstrap';
+import { LoadingAnimation } from '../LoadingAnimation';
 
 export class NewOrEditTour extends React.Component {
     constructor(props) {
@@ -57,8 +58,8 @@ export class NewOrEditTour extends React.Component {
     render() {
         if (!this.state.loaded) {
             this.loadTour();
-            return (<div>{i18next.t("Loading")}...</div>);
-        }
+            return (<LoadingAnimation/>);
+            }
 
         return (<div className="main-container align-center">
             <BrandHeader dark={true} />

@@ -7,6 +7,7 @@ import i18next from 'i18next';
 import { withTranslation } from 'react-i18next';
 import { TextFilter } from 'react-text-filter';
 import './css/ToursList.css';
+import { LoadingAnimation } from './LoadingAnimation';
 
 export class ToursList extends React.Component {
     constructor(props) {
@@ -17,10 +18,10 @@ export class ToursList extends React.Component {
     render() {
         if (this.state.tours == null) {
             this.loadTours();
-            return (<div>{i18next.t("Loading")}...</div>);
-        }    
+            return (<LoadingAnimation/>);
+            }    
 
-        var filteredTours = this.state.tours ?
+            var filteredTours = this.state.tours ?
             this.state.tours.filter((tour) => { return tour.title.toLowerCase().indexOf(this.state.filter) !== -1; }) :
             this.state.tours.slice(0);
 

@@ -2,6 +2,7 @@
 import i18next from 'i18next';
 import './css/Contributor.css';
 import { withTranslation } from 'react-i18next';
+import { LoadingAnimation } from './LoadingAnimation';
 
 export default class ContributorDetail extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ export default class ContributorDetail extends React.Component {
     render() {
         if (this.state.contributor == null) {
             this.loadContributor();
-            return (<div>{i18next.t("Loading")}...</div>);
+            return (<LoadingAnimation/>);
         }     
 
         return (

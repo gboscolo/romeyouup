@@ -2,7 +2,7 @@
 import i18next from 'i18next';
 import Contributor from './Contributor';
 import { Link } from 'react-router-dom';
-
+import { LoadingAnimation } from './LoadingAnimation';
 
 export default class ContributorsSelect extends React.Component {
     constructor(props) {
@@ -13,7 +13,7 @@ export default class ContributorsSelect extends React.Component {
     render() {
         if (this.state.contributors == null) {
             this.loadContributors();
-            return (<div>{i18next.t("Loading")}...</div>);
+            return (<LoadingAnimation />);
         }     
 
         return (

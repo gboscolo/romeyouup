@@ -7,6 +7,7 @@ import i18next from 'i18next';
 import { ImagesGallery } from './ImagesGallery';
 import { withTranslation } from 'react-i18next';
 import './css/Post.css';
+import { LoadingAnimation } from './LoadingAnimation';
 
 
 export class Post extends React.Component {
@@ -22,7 +23,7 @@ export class Post extends React.Component {
     render() {
         if (this.state.post == null) {
             this.loadPost();
-            return (<div>{i18next.t("Loading")}...</div>);
+            return (<LoadingAnimation/>);
         }       
 
         let imageCarousel = Post.getImagesCarousel(this.state.post);

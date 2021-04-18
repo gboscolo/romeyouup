@@ -9,6 +9,7 @@ import DateSelect from '../DateSelect';
 import ImageSelectPreview from 'react-image-select-pv';
 import { withTranslation } from 'react-i18next';
 import i18n from '../../i18n';
+import { LoadingAnimation } from '../LoadingAnimation';
 
 export class NewOrEditPost extends React.Component {
     constructor(props) {
@@ -56,8 +57,8 @@ export class NewOrEditPost extends React.Component {
     render() {
         if (!this.state.loaded) {
             this.loadPost();
-            return (<div>{i18next.t("Loading")}...</div>);
-        }
+            return (<LoadingAnimation/>);
+            }
 
         return (<div className="main-container align-center">
             <BrandHeader dark={true} />

@@ -5,6 +5,7 @@ import BrandHeader from './BrandHeader';
 import { Container } from 'reactstrap';
 import { withTranslation } from 'react-i18next';
 import SocialBox from './SocialBox';
+import { LoadingAnimation } from './LoadingAnimation';
 
 export class ContributorDetail extends React.Component {
     constructor(props) {
@@ -15,10 +16,10 @@ export class ContributorDetail extends React.Component {
     render() {
         if (this.state.contributor == null) {
             this.loadContributor();
-            return (<div>{i18next.t("Loading")}...</div>);
-        }     
+            return (<LoadingAnimation/>);
+            }     
 
-        return (
+            return (
             <React.Fragment>
                 <BrandHeader dark={true} />
                 <div className='contributor-background'>
