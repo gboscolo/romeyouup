@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import { unregister } from './registerServiceWorker';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -34,5 +35,4 @@ ReactDOM.render(
     </I18nextProvider>,
   rootElement);
 
-registerServiceWorker();
-
+unregister();
