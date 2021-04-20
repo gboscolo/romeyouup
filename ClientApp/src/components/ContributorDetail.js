@@ -32,7 +32,9 @@ export class ContributorDetail extends React.Component {
                         <SocialBox
                             instagram={this.state.contributor.instagram} 
                             youtube={this.state.contributor.youtube} 
-                            facebook={this.state.contributor.facebook} />
+                            facebook={this.state.contributor.facebook} 
+                                telegram={this.state.contributor.telegram}
+                                twitter={this.state.contributor.twitter} />
                     </Container>
                 </div>
             </React.Fragment>

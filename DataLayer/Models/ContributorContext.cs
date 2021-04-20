@@ -68,7 +68,9 @@ namespace romeyouup.DataLayer.Models
                 Description = reader["DESCRIPTION"].ToString(),
                 Instagram = reader["INSTAGRAM"].ToString(),
                 Facebook = reader["FACEBOOK"].ToString(),
-                Youtube = reader["YOUTUBE"].ToString()
+                Youtube = reader["YOUTUBE"].ToString(),
+                Twitter = reader["TWITTER"].ToString(),
+                Telegram = reader["TELEGRAM"].ToString()
             };
         }
 

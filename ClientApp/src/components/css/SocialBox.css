@@ -7,6 +7,12 @@
 .social-box .social-button.youtube {
 	background-image: url(../../assets/icons/youtube-grey.svg);
 }
+.social-box .social-button.twitter {
+	background-image: url(../../assets/icons/twitter-grey.svg);
+}
+.social-box .social-button.telegram {
+	background-image: url(../../assets/icons/telegram-grey.svg);
+}
 
 .social-box {
 	margin-top: 40px;
