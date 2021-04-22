@@ -25,6 +25,9 @@
 	border: none;
 }
 
+.link-container .link.selected {
+	font-weight: 700;
+}
 .link-container .link.middle {
 	border-right: 1px solid white;
 	border-left: 1px solid white;
@@ -82,5 +85,10 @@
 		border: none;
 		padding-left: 0;
 		margin-left: 0;
+	}
+
+	.home-logo {
+		background-image: url("../../assets/images/card.jpg");
+		background-size: cover;
 	}
 }

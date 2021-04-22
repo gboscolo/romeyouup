@@ -26,7 +26,6 @@ export class LateralCard extends React.Component {
                 <div className="d-lg-block d-xl-block">                    
                     <h2>{i18next.t("DiscoverWhatWeHaveForYou")}</h2>
                 </div>
-
                 <FiltersTab items={categories} selectedItem={0} onChange={onFilterChange} />
                 <ToursCarousel filter={this.state.currentToursFilter} />
                 <h2>{i18next.t("ReadOneOfOurPost")}</h2>

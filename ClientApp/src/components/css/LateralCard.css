@@ -13,8 +13,21 @@
 	margin-top: 10px;
 }
 
+.onboarding-mobile {
+	display: none;
+}
+
 @media (max-width: 950px) {
 	h2 {
 		display:none;
 	}
+	/*.onboarding-mobile {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		border-radius: 10px;
+		height: 200px;
+		background-image: url("../../assets/images/card.jpg");
+		background-size: cover;
+	}*/
 }

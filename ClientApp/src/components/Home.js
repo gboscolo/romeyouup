@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Panel from './Panel';
 import LateralCard from './LateralCard';
 import BrandHeader from './BrandHeader';
@@ -10,16 +10,19 @@ export class Home extends Component {
   static displayName = Home.name;
 
   render () {
-    return (
-        <div className="container-fluid main-container align-center">
-            <div className="d-block d-lg-none">
-                <BrandHeader dark={true} />
-            </div>
+      return (
+          <Fragment>
+              <div className="d-block d-lg-none home-logo">
+                  <BrandHeader dark={true} />
+              </div>
+            <div className="container-fluid main-container align-center">
+            
             <div className="row">
                 <Panel />
                 <LateralCard />
-            </div>      
-      </div>
+                  </div>
+              </div>
+            </Fragment>
     );
   }
 }
