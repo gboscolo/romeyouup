@@ -66,7 +66,8 @@ i18n.use(LanguageDetector).init({
                 //WhoWeAre3: "",
                 //WhoWeAre4: "",
                 OurContributors: "Our contributors",
-                FollowUsOn: "Follow us on"
+                FollowUsOn: "Follow us on",
+                Book: "Book"
             }
         },
         it: {
@@ -131,9 +132,15 @@ i18n.use(LanguageDetector).init({
                 WhoWeAre3: "Romeyouup nasce per offrire esperienze su misura per te: se non vuoi perderti la visita alle icone della città ma senza stress; se sei un tipo che va con la mappa sotto braccio alla scoperta di luoghi inediti; se sei un appassionato di bike, street art, food tasting o altro… ",
                 WhoWeAre4: "In visita per un giorno o in viaggio da una vita, se sei a Roma non esitare a chiamarci: la Città Eterna ti sta aspettando!",
                 OurContributors: "I nostri contributori",
-                CostGroupHint: "La quota è riferita alla partecipazione in gruppi. Per gruppi più piccoli chiedici informazioni!",
+                CostGroupHint: "La quota è riferita alla partecipazione in gruppi (minimo 4 persone). Per singoli o gruppi meno numerosi chiedici ulteriori informazioni!",
                 ContactsHint: "romeyouup nasce con lo scopo di offrirti un'esperienza completamente nuova con la città! Se avessi un'idea o volessi suggerirci una nuova esperienza, non esitare a scrivercelo!",
-                FollowUsOn: "Seguici anche su"
+                FollowUsOn: "Seguici anche su",
+                Book: "Prenota",
+                GeneralInfo: "Informazioni generali",
+                DateGeneralInfo: "Al momento non sono previste date per questo tour. Scrivici per programmarla in base alle tue preferenze!",
+                HealthGeneralInfo: "Questa, come tutte le nostre iniziative, vengono organizzate ed effettuate nel rispetto delle vigenti norme atte al contrasto della diffusione da COVID19",
+                EcoGeneralInfo: "romeyouup crede nel turismo sostenibile fatto nel rispetto della città e dell'ambiente. Per questo non verrà distribuito materiale cartaceo e, nel caso di visite a musei e se possibile, saranno sempre preferite le modalità ticketless",
+                InfoGeneralInfo: "L'itinerario che vedi è una proposta di visita! Potrebbe succedere che durante il suo svolgimento possa subire delle leggere modifiche in base a interessi dei visitatori o per motivi di forza maggiore. Però ti assicuriamo che sarà ugualmente memorabile!"
             }
         },
         es: {

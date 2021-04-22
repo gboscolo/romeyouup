@@ -18,9 +18,9 @@
 }
 
 @media (max-width: 950px) {
-	.tours-list {
+	/*.tours-list {
 		margin-top: 0 !important;
-	}
+	}*/
 
 		.tours-list .tour-item {
 			width: 100%;

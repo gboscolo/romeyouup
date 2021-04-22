@@ -32,30 +32,43 @@ export class Tour extends React.Component {
     render() {
         if (this.state.tour == null) {
             this.loadTour();
-            return (<LoadingAnimation/>);
-            }       
+            return (<LoadingAnimation />);
+        }
 
-            let imageCarousel = Tour.getImagesCarousel(this.state.tour);
+        let imageCarousel = Tour.getImagesCarousel(this.state.tour);
 
-            return (
+        return (
             <div className="page-container">
                 <BrandHeader dark={true} />
                 <div className="container">
                     <div className="row">
-                    <div className="col-xl-6 col-md-12">
-                        <h1 className="title">{this.state.tour.title}</h1>
+                        <div className="col-xl-6 col-md-12">
+                            <h1 className="title">{this.state.tour.title}</h1>
                             <h4 className="subtitle">"{this.state.tour.caption}"</h4>
-                            <AnchorLink href='#book' id="anchor-book">Prenota!</AnchorLink>
-                        {imageCarousel}
                             <div className="highlight-section">
-                                <div><span className="highlight-title">{i18next.t("Duration")}:</span>{this.state.tour.duration} {i18next.t("Hours")}</div>
-                                <div><span className="highlight-title">{i18next.t("Modality")}:</span> {Tour.GetModalityString(this.state.tour.modality)}</div>
-                                <div><span className="highlight-title">{i18next.t("Cost")}:</span> {this.state.tour.cost}€{i18next.t("ForPerson")}*</div>
-                                <div><small>*{i18next.t("CostGroupHint")}</small></div>
+                                <div className="hightlight-square">
+                                    <div className="highlight-text">{this.state.tour.duration}h</div>
+                                    <div className="highlight-title">{i18next.t("Duration")}</div>
+                                </div>
+                                <div className="hightlight-square">
+                                    <div className="highlight-text">{Tour.GetModalityString(this.state.tour.modality)}</div>
+                                    <div className="highlight-title">{i18next.t("Modality")}</div> </div>
+                                <div className="hightlight-square">
+                                    <div className="highlight-text">{this.state.tour.cost}€</div>
+                                    <div className="highlight-title">{i18next.t("Cost")}*</div> </div>
+                                <div className="hightlight-square">
+                                    <div className="highlight-text">{Tour.GetTourType(this.state.tour.modality)}</div>
+                                    <div className="highlight-title">{i18next.t("Type")}</div>
+                                </div>
                             </div>
-                            {this.getWillSee()}
-                    </div>
-                    <div className="col-xl-6 col-md-12">
+
+                            <AnchorLink href='#book' id="anchor-book">{i18next.t("Book")}!</AnchorLink>
+                            {imageCarousel}
+
+                            {/*   {this.getWillSee()}*/}
+                       
+                        </div>
+                        <div className="col-xl-6 col-md-12">
                             <div className="highlight-title">{i18next.t("Shortly")}</div>
                             <div className="highlights"
                                 dangerouslySetInnerHTML={{
@@ -68,34 +81,61 @@ export class Tour extends React.Component {
                                 <span>{this.state.tour.additionalInfo}</span>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col md-12 general-info">
+                            <p className="highlight-title">{i18next.t("GeneralInfo")}</p>
+                            <div>
+                                <span className="tour-icon icon-calendar" /><span>{i18next.t("DateGeneralInfo")}</span>
+                            </div>
+                            <div>
+                                <span className="tour-icon icon-health" /><span>{i18next.t("HealthGeneralInfo")}</span>
+                            </div>
+                            <div>
+                                <span className="tour-icon icon-leaf" /><span>{i18next.t("EcoGeneralInfo")}</span>
+                            </div>
+                            <div>
+                                <span className="tour-icon icon-info" /><span>{i18next.t("InfoGeneralInfo")}</span>
+                            </div>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="highlight-more-info text-secondary"><small>*{i18next.t("CostGroupHint")}</small></div>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="row">
+                                <div className="col-xl-12 col-md-12">
+                                    <h3 id="book">{i18next.t("TourRequestInfo")}</h3>
+                                    <ContactForm textareaMessage={i18next.t("YourMessage")} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-12">
                             <p className="see-more">{i18next.t("AlsoLook")}...</p>
                             <ToursCarousel filter={0} />
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                <div className="row">
-                        <div className="col-xl-12 col-md-12">
-                            <h3 id="book">{i18next.t("TourRequestInfo")}</h3>
-                            <ContactForm textareaMessage={i18next.t("YourMessage")} />
-                    </div>
-                    </div>
-                    </div>
-            <Footer/>
+                <Footer />
             </div>
         );
     }
     static GetModalityString(modality) {
         switch (modality) {
             case 1:
-                return i18next.t("WalkTour");
-                break;
+                return (<span title={i18next.t("WalkTour")} className="modality modality-walk"></span>);
             case 2:
-                return i18next.t("BikeTour");
-                break;
+                return (<span title={i18next.t("BikeTour")} className="modality modality-bike"></span>);
         }
     }
+    static GetTourType(type) {
+        switch (type) {
+            case 1:
+                return (<span title={i18next.t("Experiences")} className="type type-experience"></span>);
+            case 2:
+                return (<span title={i18next.t("Walkingtours")} className="type type-walking"></span>);
+            case 3:
+                return (<span title={i18next.t("Museums")} className="type type-museums"></span>);
+        }
+    }
+
     static getImagesCarousel(tour) {
         if (tour == null || tour.images == null) {
             return (<div></div>);

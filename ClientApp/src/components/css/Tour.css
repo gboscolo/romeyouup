@@ -38,9 +38,31 @@ body {
 	color: white;
 	border-radius: 10px;
 	background-color: #333333;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	display: flex;
+	text-align: center;
 }
 
+	.highlight-section .hightlight-square .highlight-text .modality, .highlight-section .hightlight-square .highlight-text .type {
+		background-size: 35px;
+		width: 35px;
+		height: 42px;
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-position: 0 10px;
+	}
+
+	.highlight-section .hightlight-square {
+		flex-grow: 1;
+	}
+		.highlight-section .hightlight-square .highlight-text {
+			font-size: 40px;
+		}
+			.highlight-section .hightlight-square .highlight-title{
+				font-size: 12px;
+			}.highlight-more-info {
+				margin-bottom: 24px;
+			}
 .highlights {
 	font-style: italic;
 	font-family: "PlayfairDisplay";
@@ -50,7 +72,7 @@ body {
 	padding: 20px;
 	border-radius: 10px;
 	color: white;
-	background-color: #333333;
+	background-color: #666666;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -66,6 +88,7 @@ body {
 	display: block;
 	text-align: center;
 	color: black !important;
+	font-size: 20px;
 }
 
 .description {
@@ -93,4 +116,35 @@ body {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.tour-icon {
+	height: 25px;
+	width: 20px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-position: 0 5px;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+.tour-icon.icon-calendar {
+	background-image: url(../../assets/icons/calendar.svg);
+}
+.tour-icon.icon-health {
+	background-image: url(../../assets/icons/health.svg);
+}
+.tour-icon.icon-leaf {
+	background-image: url(../../assets/icons/leaf.svg);
+}
+	.tour-icon.icon-info {
+		background-image: url(../../assets/icons/info.svg);
+	}
+.general-info {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #eeeeee;
+	margin: 0 10px 20px 10px;
+	font-family: Leelawadee;
 }
