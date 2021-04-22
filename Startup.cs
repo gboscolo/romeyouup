@@ -37,10 +37,7 @@ namespace romeyouup
         {
 
             services.AddControllersWithViews();
-            //services.AddDbContext<DataContext>(x => x.UseInMemoryDatabase("TestDb"));
             services.AddDbContext<DataContext>(x => x.UseMySql(Configuration.GetConnectionString("DefaultMembershipConnection"), ServerVersion.FromString("8.0.23.0")));
-            //services.Add(new ServiceDescriptor(typeof(DataContext), new DataContext());
-            //services.Add(new ServiceDescriptor(typeof(DataContext), new DataContext(new Microsoft.EntityFrameworkCore.DbContextOptions<DataContext>()   )));
             services.Add(new ServiceDescriptor(typeof(PostContext), new PostContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.Add(new ServiceDescriptor(typeof(TourContext), new TourContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.Add(new ServiceDescriptor(typeof(ContributorContext), new ContributorContext(Configuration.GetConnectionString("DefaultConnection")))); 
@@ -118,8 +115,8 @@ namespace romeyouup
             {
                 OnPrepareResponse = context =>
                 {
-                    context.Context.Response.Headers.Add("Cache-Control", "no-cache, no-store");
-                    context.Context.Response.Headers.Add("Expires", "-1");
+                    context.Context.Response.Headers.Add("Cache-Control", "private");
+                    context.Context.Response.Headers.Add("Expires", "3600");
                 }
             };
 

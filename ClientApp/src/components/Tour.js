@@ -10,7 +10,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button } from 'reactstrap';
 import './css/Tour.css';
 import { LoadingAnimation } from './LoadingAnimation';
-
+import Map from "./Map";
 
 export class Tour extends React.Component {
     constructor(props) {
@@ -81,6 +81,7 @@ export class Tour extends React.Component {
                                 <span>{this.state.tour.additionalInfo}</span>
                             </div>
                         </div>
+                        {Tour.GetMap(this.state.tour.positions)}
                         <div className="col md-12 general-info">
                             <p className="highlight-title">{i18next.t("GeneralInfo")}</p>
                             <div>
@@ -117,6 +118,18 @@ export class Tour extends React.Component {
             </div>
         );
     }
+    static GetMap(positions) {
+        if (positions) {
+            try {
+                let positionsArray = positions.indexOf("|") > -1 ? positions.split("|") : [positions];
+                return (<div className="col-md-12">
+                    <Map positions={ positionsArray } />
+                </div>);
+            }
+            catch (e) {}
+        }
+    }
+
     static GetModalityString(modality) {
         switch (modality) {
             case 1:

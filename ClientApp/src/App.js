@@ -10,7 +10,7 @@ import NewOrEditPost from './components/administration/NewOrEditPost';
 import ManageTours from './components/administration/ManageTours';
 
 import ManagePosts from './components/administration/ManagePosts';
-
+import Map from './components/Map';
 import { ToursList } from './components/ToursList';
 import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
@@ -36,6 +36,7 @@ export default class App extends Component {
             <Route path='/tourslist' component={ToursList} />
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
+            <Route path='/map' component={Map} />
             <Route path='/ourproposals' component={ToursList} />
             <Route path='/contributordetail/:id' component={ContributorDetail} />
             <AuthorizeRoute exact path='/Administration' component={Administration} />

@@ -17,5 +17,6 @@ namespace romeyouup.DataLayer.Models
 		public List<string> Images { get; set; }
 		public int Modality { get; set; }
 		public List<string> RawImages { get; set; }
+		public string Positions { get; set; }
 	}
 }

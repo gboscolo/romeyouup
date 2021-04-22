@@ -148,7 +148,8 @@ namespace romeyouup.DataLayer.Models
                 Summary = reader["SUMMARY"].ToString(),
                 WillSee = reader["WILLSEE"].ToString(),
                 Images = reader["IMAGES"]?.ToString().Split('|').ToList() ?? new List<string>(),
-                Modality = Convert.ToInt32(reader["MODALITY"])
+                Modality = Convert.ToInt32(reader["MODALITY"]),
+                Positions = reader["POSITIONS"].ToString()
             };
         }
 
