@@ -32,6 +32,7 @@ namespace romeyouup.Controllers
 				Image image = context.GetImage(id);
 				if (!string.IsNullOrEmpty(image.Content))
 				{
+					Response.Headers["Cache-Control"] = "public, max-age=604800, immutable";
 					return File(new MemoryStream(Convert.FromBase64String(image.Content)) ?? null, "image/jpg");
 				}
 

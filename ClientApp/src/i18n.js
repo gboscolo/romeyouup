@@ -67,7 +67,8 @@ i18n.use(LanguageDetector).init({
                 //WhoWeAre4: "",
                 OurContributors: "Our contributors",
                 FollowUsOn: "Follow us on",
-                Book: "Book"
+                Book: "Book", 
+                Type: "Type"
             }
         },
         it: {
@@ -140,7 +141,8 @@ i18n.use(LanguageDetector).init({
                 DateGeneralInfo: "Al momento non sono previste date per questo tour. Scrivici per programmarla in base alle tue preferenze!",
                 HealthGeneralInfo: "Questa, come tutte le nostre iniziative, vengono organizzate ed effettuate nel rispetto delle vigenti norme atte al contrasto della diffusione da COVID19",
                 EcoGeneralInfo: "romeyouup crede nel turismo sostenibile fatto nel rispetto della città e dell'ambiente. Per questo non verrà distribuito materiale cartaceo e, nel caso di visite a musei e se possibile, saranno sempre preferite le modalità ticketless",
-                InfoGeneralInfo: "L'itinerario che vedi è una proposta di visita! Potrebbe succedere che durante il suo svolgimento possa subire delle leggere modifiche in base a interessi dei visitatori o per motivi di forza maggiore. Però ti assicuriamo che sarà ugualmente memorabile!"
+                InfoGeneralInfo: "L'itinerario che vedi è una proposta di visita! Potrebbe succedere che durante il suo svolgimento possa subire delle leggere modifiche in base a interessi dei visitatori o per motivi di forza maggiore. Però ti assicuriamo che sarà ugualmente memorabile!",
+                Type: "Tipo"
             }
         },
         es: {

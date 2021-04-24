@@ -1,8 +1,11 @@
-﻿
+﻿// https://developer.here.com/tutorials/react/#code-examples
+// https://developer.here.com/documentation/maps/3.1.24.0/dev_guide/topics/routing.html
+
 import * as React from 'react';
 
 export default class Map extends React.Component {
     mapRef = React.createRef();
+    debugger;
     state = {
         map: null,
         positions: this.props.positions 
@@ -22,6 +25,7 @@ export default class Map extends React.Component {
                 center = parsedPositions[0];
             }
             else {
+                debugger;
                 let minLat = Math.min.apply(Math, parsedPositions.map((p) => parseFloat(p.lat)));
                 let maxLat = Math.max.apply(Math, parsedPositions.map((p) => parseFloat(p.lat)));
                 let minLong = Math.min.apply(Math, parsedPositions.map((p) => parseFloat(p.lng)));
@@ -46,7 +50,7 @@ export default class Map extends React.Component {
 
         // Create the default UI components to allow the user to interact with them
         // This variable is unused
-        const ui = H.ui.UI.createDefault(map, defaultLayers);
+        const ui = H.ui.UI.createDefault(map, defaultLayers, "it-IT");
 
         if (this.state.positions) {
             if (this.state.positions.length == 1) {
@@ -55,11 +59,6 @@ export default class Map extends React.Component {
             else {
                 var lineString = new H.geo.LineString();
                 var parsedPositions = this.state.positions.map((pos) => { return { lat: pos.split(";")[0], lng: pos.split(";")[1] } });
-
-                var bubble = new H.ui.InfoBubble(parsedPositions[0], {
-                    content: '<b>Hello World!</b>'
-                });
-
                 parsedPositions.forEach((position) => {
                     lineString.pushPoint({ lat: position.lat, lng: position.lng });
                 });
@@ -68,11 +67,6 @@ export default class Map extends React.Component {
                 ));
             }
         }
-
-        
-
-        // Add info bubble to the UI:
-        ui.addBubble(bubble);
 
         this.setState({ map });
     }

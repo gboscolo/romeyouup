@@ -91,3 +91,17 @@ System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an in
 2021-04-22T23:08:00.5850429+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
 2021-04-22T23:08:05.5905407+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
  (02daff8f)
+2021-04-22T23:47:41.6713503+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-22T23:47:41.8718290+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-22T23:47:42.0285327+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-22T23:47:42.0286323+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-22T23:47:42.0286694+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-22T23:47:49.0394104+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-22T23:53:32.4305572+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-22T23:53:32.5865249+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-22T23:53:32.7054257+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-22T23:53:32.7055062+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-22T23:53:32.7055373+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-22T23:53:37.9894334+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
