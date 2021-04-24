@@ -12,7 +12,7 @@ import { createBrowserHistory } from "history";
 export class BrandHeader extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { dark: props.dark, openMenu: false };
+        this.state = { dark: props.dark, openMenu: false, isHome: props.isHome };
     }
     setHamburgerState() {
         this.setState({ openMenu: !this.state.openMenu });
@@ -22,7 +22,7 @@ export class BrandHeader extends React.Component {
         const history = createBrowserHistory();
         const location = history.location.pathname.toLowerCase();
         return (
-            <div className="brand-header">
+            <div className={"brand-header " + (this.state.isHome ? "home":"")}>
                 <Link to={"/"}>
                 <img className="header-logo" alt="logo" src={this.state.dark ? logoDark : logo}></img>
                 </Link>

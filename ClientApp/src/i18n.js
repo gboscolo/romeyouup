@@ -68,7 +68,13 @@ i18n.use(LanguageDetector).init({
                 OurContributors: "Our contributors",
                 FollowUsOn: "Follow us on",
                 Book: "Book", 
-                Type: "Type"
+                Type: "Type",
+                HomeGalleryTitle1: "",
+                HomeGalleryText1: "",
+                HomeGalleryTitle2: "",
+                HomeGalleryText2: "",
+                HomeGalleryTitle3: "",
+                HomeGalleryText3: ""
             }
         },
         it: {
@@ -142,7 +148,13 @@ i18n.use(LanguageDetector).init({
                 HealthGeneralInfo: "Questa, come tutte le nostre iniziative, vengono organizzate ed effettuate nel rispetto delle vigenti norme atte al contrasto della diffusione da COVID19",
                 EcoGeneralInfo: "romeyouup crede nel turismo sostenibile fatto nel rispetto della città e dell'ambiente. Per questo non verrà distribuito materiale cartaceo e, nel caso di visite a musei e se possibile, saranno sempre preferite le modalità ticketless",
                 InfoGeneralInfo: "L'itinerario che vedi è una proposta di visita! Potrebbe succedere che durante il suo svolgimento possa subire delle leggere modifiche in base a interessi dei visitatori o per motivi di forza maggiore. Però ti assicuriamo che sarà ugualmente memorabile!",
-                Type: "Tipo"
+                Type: "Tipo",
+                HomeGalleryTitle1: "Perchè?",
+                HomeGalleryText1: "romeyouup nasce con la voglia di offrirti una prospettiva nuova su Roma. Che tu ci abiti o sia qui per visitarla da turista, abbiamo la soluzione per farti scoprire la città sotto un nuovo punto di vista, lontano dai soliti clichè!",
+                HomeGalleryTitle2: "Quando?",
+                HomeGalleryText2: "Roma è fantastica ad ogni stagione e ad ogni ora del giorno! Scrivici per prenotare la tua visita nel momento che ti è più adatto!",
+                HomeGalleryTitle3: "Come?",
+                HomeGalleryText3: "Ti offriamo visite guidate a musei ma, essendo Roma un museo a cielo aperto, anche passeggiate tematiche per scoprirne ogni bellezza nascosta!"
             }
         },
         es: {

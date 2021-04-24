@@ -21,6 +21,13 @@ import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
 
+import Bars from "./components/home/Bars";
+
+import Curtain from "./components/home/Curtain";
+
+import Gallery from "./components/home/Gallery";
+
+import Slider from "./components/home/Slider";
 
 import './custom.css'
 

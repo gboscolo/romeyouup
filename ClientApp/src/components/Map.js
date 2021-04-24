@@ -5,7 +5,6 @@ import * as React from 'react';
 
 export default class Map extends React.Component {
     mapRef = React.createRef();
-    debugger;
     state = {
         map: null,
         positions: this.props.positions 
@@ -25,7 +24,6 @@ export default class Map extends React.Component {
                 center = parsedPositions[0];
             }
             else {
-                debugger;
                 let minLat = Math.min.apply(Math, parsedPositions.map((p) => parseFloat(p.lat)));
                 let maxLat = Math.max.apply(Math, parsedPositions.map((p) => parseFloat(p.lat)));
                 let minLong = Math.min.apply(Math, parsedPositions.map((p) => parseFloat(p.lng)));

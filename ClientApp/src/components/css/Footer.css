@@ -6,7 +6,6 @@
 .social-buttons {
 	text-align: center;
 	padding: 10px;
-	background: rgba(0,0,0,0.5);
 	width:100%;
 }
 
@@ -15,24 +14,23 @@
 		font-family: Leelawadee;
 		font-size: 16px;
 		letter-spacing: 2px;
-		color: white;
 	}
 
 .social-button {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	display: inline-block;
-	background-size: 40px;
+	background-size: 60px;
 	background-repeat: no-repeat;
 	margin: 0 15px 0 15px;
 }
 
 .social-button.facebook {
-	background-image: url(../../assets/icons/facebook.svg);
+	background-image: url(../../assets/icons/facebook-light.svg);
 }
 	.social-button.instagram {
-		background-image: url(../../assets/icons/instagram.svg);
+		background-image: url(../../assets/icons/instagram-light.svg);
 	}
 	.social-button.mail {
-		background-image: url(../../assets/icons/mail.svg);
+		background-image: url(../../assets/icons/mail-light.svg);
 	}
