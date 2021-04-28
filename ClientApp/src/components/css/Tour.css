@@ -143,13 +143,24 @@ body {
 		background-image: url(../../assets/icons/info.svg);
 	}
 .general-info {
-	padding: 20px;
+	padding: 50px;
 	border-radius: 10px;
 	background-color: #eeeeee;
 	margin: 0 10px 20px 10px;
 	font-family: Leelawadee;
 }
 
-.map {
+	.general-info .highlight-title {
+		font-size: 18px;
+		font-weight: 800;
+	}
+	.map {
 	margin-bottom: 20px;
+}
+
+.contact-form {
+	padding: 50px;
+	border-radius: 10px;
+	background-color: #f8f8f8;
+	margin-bottom:40px;
 }

@@ -14,6 +14,12 @@
 	right: 0;
 	bottom: 0;
 }
+	.whoweare-background h1 {
+		font-size:3rem;
+	}
+	.whoweare {
+	}
+
 @media (max-width: 950px) {
 	.whoweare-background {
 		top: 80px;

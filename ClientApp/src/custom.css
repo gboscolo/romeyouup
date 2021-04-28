@@ -51,3 +51,7 @@ code {
 	width: 100vw;
 	height: 100vh;
 }
+
+.loading-item {
+	display: inline-block;
+}

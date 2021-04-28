@@ -101,7 +101,7 @@ export class Tour extends React.Component {
                             <div className="highlight-more-info text-secondary"><small>*{i18next.t("CostGroupHint")}</small></div>
                         </div>
                         <div className="col-md-12">
-                            <div className="row">
+                            <div className=" contact-form">
                                 <div className="col-xl-12 col-md-12">
                                     <h3 id="book">{i18next.t("TourRequestInfo")}</h3>
                                     <ContactForm textareaMessage={i18next.t("YourMessage")} />

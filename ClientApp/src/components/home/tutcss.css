@@ -130,6 +130,7 @@
 		transition: bottom 0.5s;
 		transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		padding: 20px;
+		padding-top: 40px;
 		font-family: "Metropolis";
 		text-align: center;
 	}
@@ -139,13 +140,15 @@
 
 
 .details h3 {
-  font-size: 40px;
-  font-weight:800;
+	font-size: 40px;
+	font-weight: 800;
+	color: #ff8c00;
 }
 .details p {
 	font-family: "PlayfairDisplay";
 	font-size: 18px;
 	letter-spacing: 0px;
+	color: grey;
 }
 .details span {
 

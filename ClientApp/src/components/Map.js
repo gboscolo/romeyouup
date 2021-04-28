@@ -13,7 +13,7 @@ export default class Map extends React.Component {
     componentDidMount() {
         const H = window.H;
         const platform = new H.service.Platform({
-            apikey: "wSdwwkflq2_itlKHuGjsMCwNUf7Jz-a6eUouiqyxoOM"
+            apikey: "iFfKRaf6-Y4TSJgrwgMThT73xJxwNukYPnP9E8zy0Ok"
         });
 
         const defaultLayers = platform.createDefaultLayers();

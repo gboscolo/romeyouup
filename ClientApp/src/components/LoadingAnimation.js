@@ -3,8 +3,10 @@ import ReactLoading from 'react-loading';
 
 export class LoadingAnimation extends React.Component {
     render() {
-        return <ReactLoading
+        let style = { width: "100%" , textAlign: "center"}
+        return <div style={ style }><ReactLoading
             color="#666666"
-        />
+            className="loading-item"
+        /></div>
     }
 }

@@ -21,7 +21,7 @@ export class WhoWeAre extends React.Component {
                 <div className='whoweare-background'>
                     <Container >
                         <h1>{i18next.t("WhoWeAre")}?</h1> 
-                        <p class="description">{i18next.t("WhoWeAre1")}</p>
+                        <p class="description whoweare">{i18next.t("WhoWeAre1")}</p>
                         <p class="description">{i18next.t("WhoWeAre2")}</p>
                         <p class="description">{i18next.t("WhoWeAre3")}</p>
                         <p class="description">{i18next.t("WhoWeAre4")}</p>

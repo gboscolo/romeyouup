@@ -57,6 +57,7 @@ export class Post extends React.Component {
     }
 
     async loadPost() {
+        debugger;
         const response = await fetch('posts/' + this.state.id);
         const data = await response.json();
         this.setState({ post: data });

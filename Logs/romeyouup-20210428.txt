@@ -1,0 +1,7 @@
+2021-04-28T14:19:18.9132354+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-28T14:19:19.1670002+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-28T14:19:19.4146769+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-28T14:19:19.4147604+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-28T14:19:19.4148213+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-28T14:19:29.1511489+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
