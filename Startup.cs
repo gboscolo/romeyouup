@@ -40,6 +40,7 @@ namespace romeyouup
             services.AddDbContext<DataContext>(x => x.UseMySql(Configuration.GetConnectionString("DefaultMembershipConnection"), ServerVersion.FromString("8.0.23.0")));
             services.Add(new ServiceDescriptor(typeof(PostContext), new PostContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.Add(new ServiceDescriptor(typeof(TourContext), new TourContext(Configuration.GetConnectionString("DefaultConnection"))));
+            services.Add(new ServiceDescriptor(typeof(TourAssetsContext), new TourAssetsContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.Add(new ServiceDescriptor(typeof(ContributorContext), new ContributorContext(Configuration.GetConnectionString("DefaultConnection")))); 
             services.AddMvc();
 

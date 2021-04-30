@@ -1,0 +1,22 @@
+2021-04-30T11:42:39.6188820+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-30T11:42:39.8914231+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-30T11:42:40.2119617+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T11:42:40.2141735+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T11:42:40.2159423+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-30T11:42:47.6462162+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-30T11:45:19.5311155+02:00 80000fdb-0004-fd00-b63f-84710c7967bb [ERR] Error in TourAssets/GetTourAssets (43f2ac18)
+2021-04-30T11:46:38.2224462+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-30T11:46:38.4369619+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-30T11:46:38.6919771+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T11:46:38.6948836+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T11:46:38.6970180+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-30T11:46:44.6502287+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)
+2021-04-30T11:56:40.3376233+02:00  [INF] Starting IdentityServer4 version "3.0.0.0" (8add0571)
+2021-04-30T11:56:40.4751790+02:00  [INF] Using explicitly configured authentication scheme "Identity.Application" for IdentityServer (046a3520)
+2021-04-30T11:56:40.5859715+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T11:56:40.5860186+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T11:56:40.5860358+02:00  [INF] Content root path: "C:\Progetti\romeyouup" (b5d60022)
+2021-04-30T11:56:46.0829738+02:00  [ERR] Browserslist: caniuse-lite is outdated. Please run:
+ (02daff8f)

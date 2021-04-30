@@ -15,6 +15,7 @@ import { ToursList } from './components/ToursList';
 import { Administration } from './components/Administration';
 import { WhoWeAre } from './components/WhoWeAre';
 import { Contacts } from './components/Contacts';
+import { TourAssets } from './components/TourAssets';
 import { OurProposals } from './components/OurProposals';
 import { ContributorDetail } from './components/ContributorDetail';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
@@ -40,10 +41,10 @@ export default class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/post/:id' component={Post} />
             <Route path='/tour/:id' component={Tour} />
+            <Route path='/assets/:id' component={TourAssets} />
             <Route path='/tourslist' component={ToursList} />
             <Route path='/contacts' component={Contacts} />
             <Route path='/whoweare' component={WhoWeAre} />
-            <Route path='/map' component={Map} />
             <Route path='/ourproposals' component={ToursList} />
             <Route path='/contributordetail/:id' component={ContributorDetail} />
             <AuthorizeRoute exact path='/Administration' component={Administration} />

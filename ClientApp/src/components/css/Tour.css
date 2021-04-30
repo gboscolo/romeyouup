@@ -164,3 +164,12 @@ body {
 	background-color: #f8f8f8;
 	margin-bottom:40px;
 }
+
+.video-container {
+	text-align: center;
+	text-align: -webkit-center;
+}
+
+.video-item {
+	margin-bottom: 30px;
+}
