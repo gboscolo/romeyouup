@@ -74,7 +74,10 @@ i18n.use(LanguageDetector).init({
                 HomeGalleryTitle2: "",
                 HomeGalleryText2: "",
                 HomeGalleryTitle3: "",
-                HomeGalleryText3: ""
+                HomeGalleryText3: "",
+                NextDates: "Next dates",
+                NotScheduledTourMessage: "This tour is not yet scheduled! Write us to make a request!",
+                AtHours: " at "
             }
         },
         it: {
@@ -154,7 +157,10 @@ i18n.use(LanguageDetector).init({
                 HomeGalleryTitle2: "Quando?",
                 HomeGalleryText2: "Roma è fantastica ad ogni stagione e ad ogni ora del giorno! Scrivici per prenotare la tua visita nel momento che ti è più adatto!",
                 HomeGalleryTitle3: "Come?",
-                HomeGalleryText3: "Ti offriamo visite guidate a musei ma, essendo Roma un museo a cielo aperto, anche passeggiate tematiche per scoprirne ogni bellezza nascosta!"
+                HomeGalleryText3: "Ti offriamo visite guidate a musei ma, essendo Roma un museo a cielo aperto, anche passeggiate tematiche per scoprirne ogni bellezza nascosta!",
+                NextDates: "Prossime date",
+                NotScheduledTourMessage: "Il tour non è attualmente in programma ma scrivici per richiederlo!",
+                AtHours: " alle ore "
             }
         },
         es: {

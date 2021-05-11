@@ -7,17 +7,17 @@ import { Link } from 'react-router-dom';
 export default class Footer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { };
+        this.state = {};
     }
 
     render() {
         return (<footer>
-                <div className={"social-buttons"}>
-                   
+            <div className={"social-buttons"}>
+
                 <a className="social-button facebook" href={"https://www.facebook.com/romeyouup/"} target="_blank"></a>
                 <a className="social-button instagram" href={"https://www.instagram.com/romeyouup/"} target="_blank"></a>
                 <a className="social-button mail" href={"mailto:info@romeyouup.it"} target="_blank"></a>
-                </div>
+            </div>
         </footer>);
     }
 }

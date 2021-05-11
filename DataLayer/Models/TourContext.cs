@@ -113,6 +113,35 @@ namespace romeyouup.DataLayer.Models
             }
         }
 
+        public List<TourDate> GetTourDates(long? id)
+        {
+            List<TourDate> tourdates = new List<TourDate>();
+            string commandText = "SELECT TOURSDATES.DATE_ID, TOURSDATES.TOUR_ID, TOURSDATES.DATE, TOURS.TITLE FROM TOURSDATES INNER JOIN TOURS";
+            if (id.HasValue)
+            {
+                commandText += " WHERE TOURSDATES.TOUR_ID = @TOUR_ID;";
+            }
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(commandText, conn);
+                cmd.Parameters.Add("@TOUR_ID", MySqlDbType.Int64);
+                cmd.Parameters["@TOUR_ID"].Value = id;
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        tourdates.Add(this.ParseTourDateFromReader(reader));
+                    }
+                }
+
+                return tourdates;
+            }
+        }
+
+
         public List<Tour> GetTours()
         {
             List<Tour> list = new List<Tour>();
@@ -131,6 +160,16 @@ namespace romeyouup.DataLayer.Models
 
                 return list;
             }
+        }
+
+        private TourDate ParseTourDateFromReader(MySqlDataReader reader)
+        {
+            return new TourDate
+            {
+                Date = Convert.ToDateTime(reader["DATE"]),
+                TourdDateId = Convert.ToInt32(reader["DATE_ID"]),
+                TourName = reader["TITLE"].ToString()
+            };
         }
 
         private Tour ParseTourFromReader(MySqlDataReader reader)

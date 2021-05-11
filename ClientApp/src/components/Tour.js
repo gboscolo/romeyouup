@@ -11,6 +11,7 @@ import { Button } from 'reactstrap';
 import './css/Tour.css';
 import { LoadingAnimation } from './LoadingAnimation';
 import Map from "./Map";
+import ToursDatesList from "./ToursDatesList";
 
 export class Tour extends React.Component {
     constructor(props) {
@@ -36,6 +37,11 @@ export class Tour extends React.Component {
         }
 
         let imageCarousel = Tour.getImagesCarousel(this.state.tour);
+        let tourdates = [ ...(this.state.tourdates || []) ];
+        //show only future dates
+        tourdates = tourdates.filter((date) => {
+            return new Date(date.date) > new Date()
+        });
 
         return (
             <div className="page-container">
@@ -69,6 +75,9 @@ export class Tour extends React.Component {
                        
                         </div>
                         <div className="col-xl-6 col-md-12">
+                            <div className="highlight-title">{i18next.t("NextDates")}</div>
+                            {this.getDatesList(tourdates) }
+                            
                             <div className="highlight-title">{i18next.t("Shortly")}</div>
                             <div className="highlights"
                                 dangerouslySetInnerHTML={{
@@ -159,10 +168,31 @@ export class Tour extends React.Component {
         );
     }
 
+    getDatesList(tourdates) {
+        if (tourdates == null || tourdates.length == 0) {
+            return (
+                <div className="text-secondary">{i18next.t("NotScheduledTourMessage")}</div>
+            );
+        }
+        else {
+            return (
+                <ul>
+                    {
+                        tourdates.map(tourdate => (
+                            <li>{new Date(tourdate.date).toLocaleDateString()} {i18next.t("AtHours")} {new Date(tourdate.date).getHours()}:00</li>
+                        ))}
+                </ul>
+            );
+        }
+    }
+
     async loadTour() {
         const response = await fetch('tours/' + this.state.id);
         const data = await response.json();
-        this.setState({ tour: data });
+
+        const responsedates = await fetch('tourdates/' + this.state.id);
+        const datas = await responsedates.json();
+        this.setState({ tour: data, tourdates: datas});
     }
 }
 
